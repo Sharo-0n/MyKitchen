@@ -86,6 +86,14 @@
 .container .info span .fa {
   color: #EF3B3A;
 }
+h1 {
+  font-family: Syncopate;
+  font-size: 49px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  line-height: 73.5px;
+}
 body {
   background: #7FFFD4; /* fallback for old browsers */
   background: -webkit-linear-gradient(right, #76b852, #8DC26F);
