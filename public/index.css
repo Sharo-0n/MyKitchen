@@ -93,6 +93,7 @@ h1 {
   font-variant: normal;
   font-weight: 100;
   line-height: 73.5px;
+  text-align: center;
 }
 body {
   background: #7FFFD4; /* fallback for old browsers */
