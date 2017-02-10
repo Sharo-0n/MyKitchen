@@ -32,7 +32,7 @@
   width: 100%;
   border: 0;
   padding: 15px;
-  color: #FFFFFF;
+  color: #20B2AA;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -87,7 +87,7 @@
   color: #EF3B3A;
 }
 body {
-  background: #76b852; /* fallback for old browsers */
+  background: #7FFFD4; /* fallback for old browsers */
   background: -webkit-linear-gradient(right, #76b852, #8DC26F);
   background: -moz-linear-gradient(right, #76b852, #8DC26F);
   background: -o-linear-gradient(right, #76b852, #8DC26F);
