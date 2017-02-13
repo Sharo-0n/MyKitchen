@@ -1,34 +1,134 @@
 {
-	"friends": [
+	
+	"receipts": [
+
 		{
-			"name": "Doug Engelbart",
-			"description": "Has awesome pet mice",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"			
+			"receipt_ID": "1",
+			"purchase_month": "2",
+			"purchase_day": "12",
+			"purchase_year": "2017",
+			"seller": "Trader Joe's",
+			"#_of_items": "3",
+			"items_array": [ "1001", "1002", "1003" ],
+			"imageURL": "",
+			"uploader_ID": "Dominic",
+			"note": "Dominic bought this at TJ",
+			"deleted": "0"
 		},
+
 		{
-			"name": "Ivan Sutherland",
-			"description": "Great at sketching",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
+			"receipt_ID": "2",
+			"purchase_month": "2",
+			"purchase_day": "10",
+			"purchase_year": "2017",
+			"seller": "Von's",
+			"#_of_items": "2",
+			"items_array": [ "2001", "2002" ],
+			"imageURL": "",
+			"uploader_ID": "Dominic",
+			"note": "Dominic bought this at Vons",
+			"deleted": "0"
+		}
+	],
+
+	"item": [
+		{
+			"receipt_ID": "1",
+			"item_ID": "1001",
+			"item_catalog": "fruit",
+			"item_name": "Apple",
+			"expiration_month": "2",
+			"expiration_day": "28",
+			"expiration_year": "2017",
+			"price_per_unit": "1.99",
+			"unit": "lbs",
+			"amount": "3.2",
+			"total_price": "6.37",
+			"wasted": "0",
+			"used_up": "0"
 		},
+
 		{
-			"name": "Lucy Suchman",
-			"description": "Loves Trukese navigators",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg"			
+			"receipt_ID": "1",
+			"item_ID": "1002",
+			"item_catalog": "drink",
+			"item_name": "Diet Coke",
+			"expiration_month": "8",
+			"expiration_day": "31",
+			"expiration_year": "2017",
+			"price_per_unit": "0.99",
+			"unit": "count",
+			"amount": "5",
+			"total_price": "4.95",
+			"wasted": "0",
+			"used_up": "0"
 		},
+
 		{
-			"name": "Vannevar Bush",
-			"description": "Has stellar associative memory",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg"			
+			"receipt_ID": "1",
+			"item_ID": "1003",
+			"item_catalog": "vegetable",
+			"item_name": "lettuce",
+			"expiration_month": "2",
+			"expiration_day": "28",
+			"expiration_year": "2017",
+			"price_per_unit": "0.99",
+			"unit": "lbs",
+			"amount": "2",
+			"total_price": "1.98",
+			"wasted": "0",
+			"used_up": "0"
 		},
+
 		{
-			"name": "Grace Hopper",
-			"description": "Only friend with a Navy ship named after them",
-			"imageURL": "http://amhistory.si.edu/ogmt/images/upload/women-mathematicians/AHB2012q06025.jpg"
+			"receipt_ID": "2",
+			"item_ID": "2001",
+			"item_catalog": "fruit",
+			"item_name": "Apple",
+			"expiration_month": "2",
+			"expiration_day": "26",
+			"expiration_year": "2017",
+			"price_per_unit": "1.69",
+			"unit": "lbs",
+			"amount": "3",
+			"total_price": "5.07",
+			"wasted": "0",
+			"used_up": "1"
 		},
+
 		{
-			"name": "Allen Newell",
-			"description": "Really into psychology",
-			"imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg"
+			"receipt_ID": "2",
+			"item_ID": "2002",
+			"item_catalog": "grian",
+			"item_name": "flour",
+			"expiration_month": "10",
+			"expiration_day": "31",
+			"expiration_year": "2017",
+			"price_per_unit": "13.99",
+			"unit": "bag",
+			"amount": "1",
+			"total_price": "13.99",
+			"wasted": "0",
+			"used_up": "0"
+		},
+
+		{
+			"receipt_ID": "2",
+			"item_ID": "2003",
+			"item_catalog": "dairy",
+			"item_name": "non-fat milk",
+			"expiration_month": "2",
+			"expiration_day": "14",
+			"expiration_year": "2017",
+			"price_per_unit": "5.99",
+			"unit": "bag",
+			"amount": "1",
+			"total_price": "5.99",
+			"wasted": "1",
+			"used_up": "0"
 		}
 	]
+
+
+
 }
