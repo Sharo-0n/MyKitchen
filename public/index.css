@@ -101,7 +101,7 @@ img {
   margin: auto;
 }
 body {
-  background: #7FFFD4; /* fallback for old browsers */
+  background: #76b852; /* fallback for old browsers */
   background: -webkit-linear-gradient(right, #76b852, #8DC26F);
   background: -moz-linear-gradient(right, #76b852, #8DC26F);
   background: -o-linear-gradient(right, #76b852, #8DC26F);
