@@ -1,0 +1,47 @@
+@import "compass/css3";
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: #76b852;
+}
+
+.flex-item {
+  background: white;
+  padding: 5px;
+  width: 400vh;
+  height: 100vh;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: #76b852;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+h1 {
+  font-family: Syncopate;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  line-height: 73.5px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+}
+body {
+  background: #76b852;
+}
