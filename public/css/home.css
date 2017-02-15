@@ -1,7 +1,7 @@
 @import "compass/css3";
-<<<<<<< HEAD
-$mainColor: $76b852;
-=======
+
+maincColor: $76b852;
+
 body{
   font-family: 'Noto Sans', sans-serif;
   margin:0;
@@ -11,7 +11,7 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-header
+header {
   width:100%; 
   background:#ffffff; 
   height:60px; 
@@ -112,7 +112,7 @@ a{color:#336699;}
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-<<<<<<< HEAD
+
 .title {
   font-family: Syncopate;
   font-size: 50px;
@@ -120,7 +120,7 @@ a{color:#336699;}
   font-variant: normal;
   font-weight: 100;
   line-height: 73.5px;
-=======
+}
 h1 {
   color: #7c795d; font-family: 'Trocchi', 
   margin-top: 200px;
@@ -134,7 +134,6 @@ h1 {
   normal; 
   line-height: 48px; 
   margin: 0;  
->>>>>>> d3f9841be72fcdb84f2f209b2a0cc794e1e08d83
   text-align: center;
 }
 h1{

@@ -8,7 +8,7 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-header
+header {
   width:100%; 
   background:#ffffff; 
   height:60px; 
