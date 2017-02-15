@@ -8,6 +8,12 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.title{
+  height: 100px;
+}
+
+
 header {
   width:100%; 
   background:#ffffff; 
@@ -15,6 +21,7 @@ header {
   line-height:60px;
   border-bottom:1px solid #dddddd;
 }
+
 .hamburger{
   background:none;
   position:absolute;
@@ -45,6 +52,7 @@ header {
   outline:none;
   z-index:10000000000000;
 }
+
 .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:50%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
@@ -60,21 +68,16 @@ header {
   margin-top:5px; 
   margin:0 auto;
 }
-header{
-  padding: 100;
-  margin: 100;
-  color: #111; 
-  font-family: 'Helvetica Neue', 
-  sans-serif; 
-  font-size: 275px; 
-  font-weight: 
-  bold;
-  letter-spacing: -1px; 
-  line-height: 1; 
-  text-align: center;
-}
+
+
 span{padding-left:20px;}
-a{color:#336699;}
+
+a{color:#e9fac8;}
+
+a:hover {
+  color: #ffec99;
+}
+
 .flex-container {
   padding: 0;
   margin: 0;
@@ -107,16 +110,20 @@ a{color:#336699;}
 }
 
 h1 {
-  color: #111; 
-  font-family: 'Helvetica Neue', 
-  sans-serif; 
-  font-size: 275px; 
-  font-weight: 
-  bold;
+  color: #ebfbee; 
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 4em; 
+  font-weight:  bold;
   letter-spacing: -1px; 
   line-height: 1; 
   text-align: center;
 }
 body {
   background: #76b852;
+}
+
+.item_history {
+  border: none;
+  text-align: center;
+  color: #e9fac8;
 }
