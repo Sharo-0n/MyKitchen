@@ -64,6 +64,10 @@ header{
   padding: 100;
   margin: 100;
   color: #111; 
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
   font-family: 'Helvetica Neue', 
   sans-serif; 
   font-size: 275px; 
@@ -107,14 +111,18 @@ a{color:#336699;}
 }
 
 h1 {
-  color: #111; 
-  font-family: 'Helvetica Neue', 
-  sans-serif; 
-  font-size: 275px; 
-  font-weight: 
-  bold;
+  color: #7c795d; font-family: 'Trocchi', 
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  serif; 
+  font-size: 80px;
   letter-spacing: -1px; 
-  line-height: 1; 
+  font-weight: 
+  normal; 
+  line-height: 48px; 
+  margin: 0;  
   text-align: center;
 }
 body {
