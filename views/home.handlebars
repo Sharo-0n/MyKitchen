@@ -26,10 +26,10 @@
 			<table>
 				{{#each item}}
 				<div class="item-wrapper">
-					<a href="/item/{{id}}" class="click-listener">
+					<a href="/item/{{item_ID}}" class="click-listener">
 						<img src="{{ imgURL }}" class="img-responsive" />
+						<p class="text_centered">{{ item_name }}</p>
 					</a>
-					<p class="text_centered">{{ item_name }}</p>
 					<hr>
 				</div>
 				{{/each}}
