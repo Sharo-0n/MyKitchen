@@ -61,6 +61,8 @@ header
   margin:0 auto;
 }
 header{
+  padding: 100;
+  margin: 100;
   color: #111; 
   font-family: 'Helvetica Neue', 
   sans-serif; 
