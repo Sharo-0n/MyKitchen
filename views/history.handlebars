@@ -19,6 +19,7 @@
 	  		<button class="hamburger">&#9776;</button>
 	  		<button class="cross">&#735;</button>
 		</span>
+		
 		<div class="menu">
 	  		<ul>
 	    		<a href="/home"><li>Home</li></a>
@@ -30,17 +31,14 @@
 
 	<div class="container">
 			<div class="item_history">
-				<table>
-					{{#each item}}
+				{{#each item}}
 					<div class="item-wrapper">
 						<a href="/item/{{item_ID}}" class="click-listener">
 							<img src="{{ imgURL }}" class="img-responsive" />
 							<p class="text_centered">{{ item_name }}</p>
 						</a>
-						
 					</div>
-					{{/each}}
-				</table>
+				{{/each}}
 			</div>
 
 			<table class="bottom_button_table" align="center">
