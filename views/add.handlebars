@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html>
+
+<head>
+		<title>Add</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/index.css" >
+		<link rel="stylesheet" href="../css/bootstrap.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.css">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Syncopate" />
+</head>
+
+<body>
+	<div class="container">
+		<h1>add item</h1>
+
+		<form id="addItemForm" role="form" method="get" action="/addItem">
+			<h3>Add an item</h3>
+
+			<div>
+				<label for="item_name">Item Name:</label>
+				<input type="text" placeholder="Item Name" name="item_name">
+			</div>
+			<br>
+
+
+			<div class = ExpirationDate>
+				<label>Expiration Date:</label>
+				<!--
+				<input type="date" name="expiration_date">
+				-->
+				<select name="expiration_month">
+					<option value="1">Jan</option>
+					<option value="2">Feb</option>
+					<option value="3">Mar</option>
+					<option value="4">Apr</option>
+					<option value="5">May</option>
+					<option value="6">Jun</option>
+					<option value="7">Jul</option>
+					<option value="8">Aug</option>
+					<option value="9">Sep</option>
+					<option value="10">Oct</option>
+					<option value="11">Nov</option>
+					<option value="12">Dec</option>
+				</select>
+
+				<select name="expiration_day">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+				</select>
+
+				<input type="text" value="2017" placeholder="year" name="expiration_year">
+			
+			</div>
+			<br>
+
+			<div class = Prices>
+				<label>Price:</label>
+				<input type="text" placeholder="Price" name="total_price">
+				<!--
+				<input type="text" placeholder="Unit Price" name="price_per_unit">
+				<p> / </p>
+				<select name="unit">
+					<option value="lbs">lbs</option>
+					<option value="kg">kg</option>
+					<option value="g">g</option>
+					<option value="each">each</option>
+					<option value="ml">ml</option>
+					<option value="L">L</option>
+					<option value="oz">oz</option>
+					<option value="gal">gal</option>
+				</select>
+				-->
+				<br>
+			</div>
+
+
+
+
+			<input type="submit" id="submitBtn" class="btn btn-default" value="Add the item"></input>
+		</form>
+		
+	</div>
+
+	<script src="../js/index.js"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="../js/jquery-1.11.0.js"></script>
+	<script src="../js/bootstrap.js"></script>
+
+</body>
+
+</html>
