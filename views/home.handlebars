@@ -18,9 +18,9 @@
 
 	<div class="menu">
   		<ul>
-    		<a href="#"><li>LINK ONE</li></a>
-    		<a href="#"><li>LINK TWO</li></a>
-    		<a href="#"><li>LINK THREE</li></a>
+    		<a href="#"><li> History </li></a>
+    		<a href="#"><li> Settings </li></a>
+    		<a href="#"><li> My Pantry </li></a>
     		<a href="#"><li>LINK FOUR</li></a>
     		<a href="#"><li>LINK FIVE</li></a>
   		</ul>
@@ -33,17 +33,13 @@
 
 	<!--Wood: http://www.technocrazed.com/wp-content/uploads/2015/12/Wood-Wallpaper-Background-22.jpg-->
 	<ul class="container">
-  		<li class="shelves">
+  		<ul class="shelves">
   			{{#each item}}
-  			<div class="shelf">
-  				<a herf="/item/{{item_ID}}" class = "class-listener">
-  					<img src = "{{imgURL}}" class = "img-responsive"/>
-  					<p>{{item_name}}</p>
-  				</a>
-  				<hr>
-  			</dive>
+  				<li herf="/item/{{item_ID}}" class = "food">
+  					{{item_name}}
+  				</li>
   			{{/each}}
-  		</li>
+  		</ul>
   		<style>
   		</style>
 	</ul>
