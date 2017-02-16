@@ -11,55 +11,52 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="container">
-
 		<div class="title">
 				<h1>History</h1>
 		</div>
 
-		</span>
+		<span>
 	  		<button class="hamburger">&#9776;</button>
 	  		<button class="cross">&#735;</button>
 		</span>
-	<div class="menu">
-  		<ul>
-    		<a href="/home"><li>Home</li></a>
-    		<a href="#"><li>Receipt</li></a>
-    		<a href="/history"><li>History</li></a>
-    		<a href="/account"><li>Account</li></a>
-  		</ul>
+		<div class="menu">
+	  		<ul>
+	    		<a href="/home"><li>Home</li></a>
+	    		<a href="#"><li>Receipt</li></a>
+	    		<a href="/history"><li>History</li></a>
+	    		<a href="/account"><li>Account</li></a>
+	  		</ul>
 		</div> 
-		<div class="container1">
-		<div class="item_history" id="history_shelf">
-			<table>
-				{{#each item}}
-				<div class="item-wrapper">
-					<a href="/item/{{item_ID}}" class="click-listener">
-						<img src="{{ imgURL }}" class="img-responsive" />
-						<p class="text_centered">{{ item_name }}</p>
-					</a>
-					<hr>
-				</div>
-				{{/each}}
-			</table>
-		</div>
-		</div>
-		<table class="bottom_button_table" align="center">
-			<tr>
-				<td>
-					<a href="#" class="floating_plus_icon">
-						<button id="add_item">Add</button>
-					</a>
-				</td>
-				<td>
-					<a href="#" class="edit_item">
-						<button id="edit_item">Edit</button>
-					</a>
-				</td>
-			</tr>
-		</table>
 
-		
+	<div class="container">
+			<div class="item_history">
+				<table>
+					{{#each item}}
+					<div class="item-wrapper">
+						<a href="/item/{{item_ID}}" class="click-listener">
+							<img src="{{ imgURL }}" class="img-responsive" />
+							<p class="text_centered">{{ item_name }}</p>
+						</a>
+						
+					</div>
+					{{/each}}
+				</table>
+			</div>
+
+			<table class="bottom_button_table" align="center">
+				<tr>
+					<td>
+						<a href="#" class="floating_plus_icon">
+							<button class="button addButton">Add</button>
+						</a>
+					</td>
+					<td>
+						<a href="#" class="edit_item">
+							<button class="button editButton">Edit</button>
+						</a>
+					</td>
+				</tr>
+			</table>	
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
