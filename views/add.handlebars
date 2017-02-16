@@ -16,22 +16,8 @@
 	<div class="container">
 		<h1>add item</h1>
 
-		<form id="addItemForm" role="form" method="get" action="/add">
+		<form id="addItemForm" role="form" method="get" action="/addItem">
 			<h3>Add an item</h3>
-
-			"receipt_ID": "1",
-			"item_ID": "1001",
-			"item_catalog": "fruit",
-			"item_name": "Apple",
-			"item_imageURL": "",
-			"expiration_month": "2",
-			"expiration_day": "28",
-			"expiration_year": "2017",
-			"price_per_unit": "1.99",
-			"unit": "lbs",
-			"amount": "3.2",
-			"total_price": "6.37",
-			
 
 			<div>
 				<label for="item_name">Item Name:</label>
@@ -42,8 +28,9 @@
 
 			<div class = ExpirationDate>
 				<label>Expiration Date:</label>
-				<input type="date" name="bday">
 				<!--
+				<input type="date" name="expiration_date">
+				-->
 				<select name="expiration_month">
 					<option value="1">Jan</option>
 					<option value="2">Feb</option>
@@ -94,12 +81,14 @@
 				</select>
 
 				<input type="text" value="2017" placeholder="year" name="expiration_year">
-			-->
+			
 			</div>
 			<br>
 
 			<div class = Prices>
 				<label>Price:</label>
+				<input type="text" placeholder="Price" name="total_price">
+				<!--
 				<input type="text" placeholder="Unit Price" name="price_per_unit">
 				<p> / </p>
 				<select name="unit">
@@ -112,7 +101,9 @@
 					<option value="oz">oz</option>
 					<option value="gal">gal</option>
 				</select>
+				-->
 				<br>
+			</div>
 
 
 
