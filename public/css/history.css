@@ -10,6 +10,8 @@ body{
 
 }
 
+
+
 .container {
   padding: 0;
 }
@@ -143,7 +145,10 @@ span{padding-left:20px;}
 .click-listener:link, .click-listener:visited {
     min-height: 60px;
     min-width: 200px;
+    width: 80%;
+    height: 4em;
     background-color: #e9fac8;
+    font-size: 3em;
     font-weight: 5;
     color: #E57A44;
     padding: 14px 25px;
