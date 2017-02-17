@@ -9,6 +9,7 @@ h1{
   font-family:Syncopate;
   line-height:1;
 }
+
 .floating_plus_icon {
   background:none;
   position:absolute;
@@ -99,7 +100,7 @@ header{
   padding:5px 15px 0px 15px;
   color:#FF7F50;
   border:0;
-  font-size:1.4em;
+  font-size:3em;
   font-weight:bold;
   cursor:pointer;
   outline:none;
