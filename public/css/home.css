@@ -222,3 +222,24 @@ body{
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+.addItemForm {
+  font-size: 24px;
+  margin-left: 300px;
+  margin-top: 100px;
+  txt-align: center;
+  line-height: 25px;
+}
+
+select{
+  width: 90px;
+  height: 200px;
+}
+
+#submitBtn {
+  font-size: 24px;
+  padding: 20px 20px;
+  margin-top: 30px;
+  text-align:center;
+  width: 250px;
+}
