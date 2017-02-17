@@ -22,14 +22,15 @@ header {
   border-bottom:1px solid #dddddd;
 }
 
+
 .hamburger{
   background:none;
   position:absolute;
   top:0;
-  right:0;
+  left:0;
   line-height:45px;
   padding:5px 15px 0px 15px;
-  color:#999;
+  color:#FF7F50;
   border:0;
   font-size:1.4em;
   font-weight:bold;
