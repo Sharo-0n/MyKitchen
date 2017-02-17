@@ -126,6 +126,7 @@ header{
   list-style-image: none;
 }
 .menu li {
+  font-size: 24px;
   display: block;   
   padding:15px 0 15px 0; 
   border-bottom:#FF7F50 1px solid;
@@ -184,7 +185,7 @@ body{
 
 .addButton {
     margin-top: 0;
-    padding: 2.5px 32px;
+    padding: 2px 30px;
     background-color: white; 
     color: black; 
     border: 2px solid #4CAF50;
@@ -207,4 +208,38 @@ body{
     background-color: #38d9a9;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.logoutButton {
+    margin-bottom: 2em;
+    background-color: #DF5E5E; 
+    color: black; 
+    border: 0px solid;
+}
+
+.logoutButton:hover {
+    background-color: #A10808;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.addItemForm {
+  font-size: 24px;
+  margin-left: 300px;
+  margin-top: 100px;
+  txt-align: center;
+  line-height: 25px;
+}
+
+select{
+  width: 90px;
+  height: 200px;
+}
+
+#submitBtn {
+  font-size: 24px;
+  padding: 20px 20px;
+  margin-top: 30px;
+  text-align:center;
+  width: 250px;
 }

@@ -1,63 +1,56 @@
 <!doctype html>
 
 <html>
-
 <head>
-	<title>Account</title>
+	<link href="index.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Syncopate" />
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/bootstrap-theme.css">
-	<link rel="stylesheet" href="../css/account.css">
+	<link rel="stylesheet" href="../css/home.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-	<div class="container">
 
-		<div class="title">
-				<h1>Account</h1>
-		</div>
-	</span>
+<body>
+
+	<header>
   		<button class="hamburger">&#9776;</button>
-  		<button class="cross">&#735;</button>
+  		<!--<button class="cross">&#735;</button>-->
 	</header>
 
 	<div class="menu">
   		<ul>
+  			<a href="/home"><li> My Pantry </li></a>
     		<a href="/history"><li> History </li></a>
     		<a href="#"><li> Settings </li></a>
-    		<a href="/home"><li> My Pantry </li></a>
     		<a href="/account"><li>Account</li></a>
   		</ul>
-		</div> 
-
-		<div class="item_history" id="history_shelf">
-			<table>
-				{{#each item}}
-				<div class="item-wrapper">
-					<a href="/item/{{item_ID}}" class="click-listener">
-						<img src="{{ imgURL }}" class="img-responsive" />
-						<p class="text_centered">{{ item_name }}</p>
-					</a>
-					<hr>
-				</div>
-				{{/each}}
-			</table>
-		</div>
-
-		<table class="bottom_button_table" align="center">
+  		<br /><br /><br />
+	  	<table class="bottom_button_table" align="center">
 			<tr>
 				<td>
-					<a href="#" class="floating_plus_icon">
-						<button id="add_item">Add</button>
-					</a>
-				</td>
-				<td>
-					<a href="#" class="edit_item">
-						<button id="edit_item">Edit</button>
+					<a href="/">
+						<button class="button logoutButton">LOGOUT</button>
 					</a>
 				</td>
 			</tr>
 		</table>
+	</div>
+
+	<!-- Title: Account -->
+	<div class = "title">
+		<h1>Account</h1>
+	</div>
+
+	<table class="bottom_button_table" align="center">
+		<tr>
+			<td>
+				<a href="/" class="edit_item">
+					<button class="button logoutButton">LOGOUT</button>
+				</a>
+			</td>
+		</tr>
+	</table>
 
 		
 	</div>
