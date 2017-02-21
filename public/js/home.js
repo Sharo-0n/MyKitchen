@@ -21,7 +21,7 @@ $( ".cross" ).hide();
 $( ".menu" ).hide();
 $( ".hamburger" ).click(function() {
 $( ".menu" ).slideToggle( "slow", function() {
-$( ".cross" ).show();
+$( ".cross" ).show();8
 });
 });
 
@@ -52,4 +52,7 @@ window.onclick = function(event) {
     }
   }
 }
-
+/* function to toggle the locations of buttons relative to window size */
+/*function windowSize() {
+  var w= 
+}*/

@@ -4,10 +4,18 @@ h1{
   color:#FFFFFF;
   letter-spacing:3pt;
   word-spacing:-2pt;
-  font-size:54px;
+  font-size:5em;
   text-align:center;
   font-family:Syncopate;
   line-height:1;
+}
+h2{
+  text-shadow:0px 0px 2px rgba(0,0,0,0.2);
+  font-weight:normal;
+  color:#FFFFFF;
+  letter-spacing:3pt;
+  word-spacing:-2pt;
+  font-family: Syncopate;  
 }
 
 .floating_plus_icon {
@@ -185,7 +193,7 @@ body{
 
 .addButton {
     margin-top: 4em;
-    margin-right: 4cm;
+    margin-right: 20%;
     padding: 2px 30px;
     background-color: white; 
     color: black; 
@@ -210,6 +218,7 @@ body{
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
 
 .logoutButton {
     margin-bottom: 2em;
@@ -269,7 +278,7 @@ grocery items are viewed (expiratin date versus date added ); */
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #4CAF50;
 }
 
 input:focus + .slider {
@@ -309,4 +318,23 @@ select{
   margin-top: 30px;
   text-align:center;
   width: 250px;
+}
+/* styling for tab at the top of the pantry */
+p{  
+  position: absolute; 
+  margin-top: 15em;
+  margin-right: 4em;
+  padding: 2px 30px;
+  top:0;
+  left:9pc;
+  padding:5px 15px 0px 15px;
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  height:53px;
+  width:120px;
+  border-radius: 90px 90px 0 0;
+  -moz-border-radius: 90px 90px 0 0;
+  -webkit-border-radius: 90px 90px 0 0;
+  background:#A0522D;
 }
