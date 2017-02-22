@@ -97,8 +97,13 @@ header{
   background-image: ;
 }
 
-.image{
-
+.food_icon{
+  padding: 0px;
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+  margin: 30px;
+  overflow: auto;
 }
 
 .hamburger{
