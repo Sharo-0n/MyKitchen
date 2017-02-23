@@ -98,8 +98,9 @@ header{
 }
 
 .food_icon{
-  padding: 0px;
-  display: block;
+  padding: 1px;
+  height: 100%;
+  width: auto;
   max-width: 100px;
   max-height: 100px;
   margin: 30px;
@@ -245,7 +246,6 @@ grocery items are viewed (expiratin date versus date added ); */
   position: absolute; 
   margin-top: 10em;
   margin-right: 4cm;
-  padding: 2px 30px;
   top:0;
   right:0;
   padding:5px 15px 0px 15px;
@@ -255,7 +255,9 @@ grocery items are viewed (expiratin date versus date added ); */
 }
 
 /* Hide default HTML checkbox */
-.switch input {display:none;}
+.switch input {
+  display:none;
+}
 
 /* The slider */
 .slider {
