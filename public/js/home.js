@@ -17,19 +17,20 @@ function initializePage() {
 	console.log("Javascript connected!");
 }
 
+$( ".private_shelf" ).hide();
 $( ".cross" ).hide();
 $( ".menu" ).hide();
 $( ".hamburger" ).click(function() {
-$( ".menu" ).slideToggle( "slow", function() {
-$( ".cross" ).show();8
-});
+  $( ".menu" ).slideToggle( "slow", function() {
+    $( ".cross" ).show();8
+  });
 });
 
 $( ".cross" ).click(function() {
-$( ".menu" ).slideToggle( "slow", function() {
-$( ".cross" ).hide();
-$( ".hamburger" ).show();
-});
+  $( ".menu" ).slideToggle( "slow", function() {
+    $( ".cross" ).hide();
+    $( ".hamburger" ).show();
+  });
 });
 
 /* When the user clicks on the button, 

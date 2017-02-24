@@ -47,22 +47,52 @@
 		<h1>My Pantry</h1>
 	</div>
 	<label class="switch">
-		<h2>View</h2> 
-		<input  type="checkbox">
-  		<div class="slider round"></div>
+		<h2 id="current_view">Public Pantry</h2> 
+		<!-- default checkbox hided, slider round defined in css -->
+		<input  id="view_swithcer" type="checkbox" onclick="swith_view()">
+		<div class="slider round"></div>
+
+		<script>
+			function swith_view() {
+				var view = document.getElementById("view_swithcer").checked;
+				if(view) {
+					document.getElementById("current_view").innerHTML = "Private Pantry";
+					$(".private_shelf").show();
+					$(".public_shelf").hide();
+				}
+				else {
+					document.getElementById("current_view").innerHTML = "Public Pantry";
+					$(".private_shelf").hide();
+					$(".public_shelf").show();
+				}
+			}
+		</script>
 
 	</label>
 
 	<!--Wood: http://www.technocrazed.com/wp-content/uploads/2015/12/Wood-Wallpaper-Background-22.jpg-->
 	<ul class="container">
   		<ul class="shelves">
-  			{{#each item}}
-  				<li herf="/item/{{item_ID}}" class = "food">
-  					{{item_name}}
-  					<img src="{{item_imageURL}}" class="food_icon">
-  				</li>
+  			<ul class="private_shelf">
+	  			{{#each item}}
+	  				<li herf="/item/{{item_ID}}" class = "food">
+	  					{{item_name}}
+	  					<img src="{{item_imageURL}}" class="food_icon">
+	  				</li>
 
-  			{{/each}}
+	  			{{/each}}
+  			</ul>
+
+  			<ul class="public_shelf">
+	  			{{#each item}}
+	  				{{#if shareable}}
+		  				<li herf="/item/{{item_ID}}" class = "food">
+		  					{{item_name}}
+		  					<img src="{{item_imageURL}}" class="food_icon">
+		  				</li>
+		  			{{/if}}
+	  			{{/each}}
+  			</ul>
   		</ul>
   		<style>
   		</style>
