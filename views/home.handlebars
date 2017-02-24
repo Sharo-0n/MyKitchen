@@ -1,15 +1,95 @@
 <!doctype html>
 
 <html>
-
 <head>
+	<link href="index.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Syncopate" />
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/bootstrap-theme.css">
 	<link rel="stylesheet" href="../css/home.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 </head>
 <body>
+
+	<header>
+  		<button class="hamburger">&#9776;</button>
+  		<a href="/add" class="floating_plus_icon">
+					<button class="button addButton">Add</button>
+				</a>
+  		<!--<button class="cross">&#735;</button>-->
+	</header>
+
+	<div class="menu">
+  		<ul>
+  			<a href="/home"><li> My Pantry </li></a>
+    		<a href="/history"><li> History </li></a>
+    		<a href="/add"><li> Add Item </li></a>
+    		<a href="/account"><li>Account Settings</li></a>
+  		</ul>
+  		
+  		<!--LogOut Button-->
+  		<br /><br /><br />
+	  	<table class="bottom_button_table" align="center">
+			<tr>
+				<td>
+					<a href="/">
+						<button class="button logoutButton">LOGOUT</button>
+					</a>
+				</td>
+			</tr>
+		</table>
+
+
+	</div>
+
+	<!-- Title: MyPantry -->
+	<div class = "title">
+		<h1>My Pantry</h1>
+	</div>
+	<label class="switch">
+		<h2>View</h2> 
+		<input  type="checkbox">
+  		<div class="slider round"></div>
+
+	</label>
+
+	<!--Wood: http://www.technocrazed.com/wp-content/uploads/2015/12/Wood-Wallpaper-Background-22.jpg-->
+	<ul class="container">
+  		<ul class="shelves">
+  			{{#each item}}
+  				 <!--Call your modal-->
+  				<a id="demo01" href="#animatedModal" class = "food">
+  					{{item_name}}
+  					<img src="{{item_imageURL}}" class="food_icon">
+  				</a>
+
+			    <!--DEMO01-->
+			    <div id="animatedModal">
+			        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+			        <div class="close-animatedModal"> 
+			            Back To Pantry
+			        </div>
+			            
+			        <div class="modal-content">
+			           <!--Your modal content goes here-->
+			           <h4>{{item_name}}</h4>
+			           <ul>
+			           		<li>Amount: {{amount}} {{unit}}</li>
+			           		<li>Expiring on: {{expiration_month}}/{{expiration_date}}/{{expiration_year}}</li>
+			           </ul>
+			        </div>
+			    </div>
+  			{{/each}}
+  		</ul>
+  		
+	</ul>
+
+
+
+
+	<!--
 	<div class="flex-item">
 	<div class="container">
 		<div class="title">
@@ -59,10 +139,15 @@
 
 		
 	</div>
-
+	-->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="../js/jquery-1.11.0.js"></script>
 	<script src="../js/bootstrap.js"></script>
 	<script src="../js/home.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="yourPath/animatedModal.min.js"></script>
+  <script>
+  $("#demo01").animatedModal();
+ </script>
 </body>
 </html>
