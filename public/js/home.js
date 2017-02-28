@@ -52,7 +52,4 @@ window.onclick = function(event) {
     }
   }
 }
-/* function to toggle the locations of buttons relative to window size */
-/*function windowSize() {
-  var w= 
-}*/
+
