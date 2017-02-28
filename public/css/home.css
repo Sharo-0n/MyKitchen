@@ -45,6 +45,7 @@ header{
   padding: 0vh;
   margin: 7vh 0 3vh 0;
   list-style: none;
+  height: 100%
   
   display: -webkit-box;
   display: -moz-box;
@@ -114,11 +115,24 @@ header{
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   line-height: 50px;
   color: white;
-  overflow: auto;
   font-weight: normal;
   font-size: 1em;
   text-align: center;
   background-image: ;
+}
+
+.info{
+  font-weight: normal;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: right;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  width: 200px;
+  height: 250px;
+}
+
+.food:hover .info{
+  display:block;
 }
 
 .food_icon{
@@ -351,7 +365,7 @@ select{
   width: 250px;
 }
 /* styling for tab at the top of the pantry */
-p{  
+.tab{  
   position: absolute; 
   margin-top: 15em;
   margin-right: 4em;

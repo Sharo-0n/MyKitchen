@@ -21,7 +21,7 @@
 	<div class="menu">
   		<ul>
   			<a href="/home"><li> My Pantry </li></a>
-    		<a href="/history"><li> History </li></a>
+    		<!--<a href="/history"><li> History </li></a>-->
     		<a href="/add"><li> Add Item </li></a>
     		<a href="/account"><li>Account Settings</li></a>
   		</ul>
@@ -75,7 +75,13 @@
 	  				<li herf="/item/{{item_ID}}" class = "food">
 	  					{{item_name}}
 	  					<img src="{{item_imageURL}}" class="food_icon">
+	  					</img> 
+	  					<!--
+	  					<p>Amount: {{amount}} {{unit}}</p>
+	  					<p>Expiring on: {{expiration_month}}/{{expiration_date}}/{{expiration_year}}</p>
+	  					-->
 	  				</li>
+	  				
 
 	  			{{/each}}
   			</ul>
@@ -86,6 +92,11 @@
 		  				<li herf="/item/{{item_ID}}" class = "food">
 		  					{{item_name}}
 		  					<img src="{{item_imageURL}}" class="food_icon">
+		  					</img>
+		  					<!--
+		  					<p>Amount: {{amount}} {{unit}}</p>
+	  						<p>Expiring on: {{expiration_month}}/{{expiration_date}}/{{expiration_year}}</p>
+	  					-->
 		  				</li>
 		  			{{/if}}
 	  			{{/each}}
