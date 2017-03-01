@@ -17,6 +17,7 @@ exports.addItem = function(req, res) { 
 	var expiration_day = req.query.expiration_day;
 	var expiration_year = req.query.expiration_year;
 	var total_price = req.query.total_price;
+	var shareable = req.query.shareable;
 
 
 	var newItem = {
@@ -32,6 +33,7 @@ exports.addItem = function(req, res) { 
 		unit: "lbs",
 		amount: "3.2",
 		total_price: total_price,
+		shareable: shareable,
 		wasted: "0",
 		used_up: "0"
 	};

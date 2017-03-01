@@ -45,6 +45,7 @@
 			"unit": "lbs",
 			"amount": "3.2",
 			"total_price": "6.37",
+			"shareable": true,
 			"wasted": "0",
 			"used_up": "0"
 		},
@@ -62,6 +63,7 @@
 			"unit": "count",
 			"amount": "5",
 			"total_price": "4.95",
+			"shareable": true,
 			"wasted": "0",
 			"used_up": "0"
 		},
@@ -79,6 +81,7 @@
 			"unit": "lbs",
 			"amount": "2",
 			"total_price": "1.98",
+			"shareable": false,
 			"wasted": "0",
 			"used_up": "0"
 		},
@@ -96,6 +99,7 @@
 			"unit": "lbs",
 			"amount": "3",
 			"total_price": "5.07",
+			"shareable": true,
 			"wasted": "0",
 			"used_up": "1"
 		},
@@ -113,6 +117,7 @@
 			"unit": "bag",
 			"amount": "1",
 			"total_price": "13.99",
+			"shareable": false,
 			"wasted": "0",
 			"used_up": "0"
 		},
@@ -130,6 +135,7 @@
 			"unit": "bag",
 			"amount": "1",
 			"total_price": "5.99",
+			"shareable": false,
 			"wasted": "1",
 			"used_up": "0"
 		}

@@ -14,6 +14,7 @@ var add = require('./routes/add');
 var history = require('./routes/history');
 var account = require('./routes/account');
 var settings = require('./routes/settings');
+var grocerylist = require('./routes/grocerylist');
 // Example route
 // var user = require('./routes/user');
 
@@ -49,6 +50,7 @@ app.get('/add', add.view);
 app.get('/history', history.view);
 app.get('/account', account.view);
 app.get('/settings', settings.view);
+app.get('/grocerylist', grocerylist.view);
 // Example route
 // app.get('/users', user.list);
 

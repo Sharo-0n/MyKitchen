@@ -15,15 +15,16 @@
   		<button class="hamburger">&#9776;</button>
   		<a href="/add" class="floating_plus_icon">
 					<button class="button addButton">Add</button>
-				</a>
-  		<!--<button class="cross">&#735;</button>-->
+		</a>
 	</header>
 
 	<div class="menu">
   		<ul>
   			<a href="/home"><li> My Pantry </li></a>
-    		<a href="/history"><li> History </li></a>
+    		<!--<a href="/history"><li> History </li></a>-->
     		<a href="/add"><li> Add Item </li></a>
+    	
+    		<a href="/grocerylist"><li>Grocery List</li></a>
     		<a href="/account"><li>Account Settings</li></a>
   		</ul>
   		
@@ -38,8 +39,6 @@
 				</td>
 			</tr>
 		</table>
-
-
 	</div>
 
 	<!-- Title: MyPantry -->
@@ -47,78 +46,49 @@
 		<h1>My Pantry</h1>
 	</div>
 	<label class="switch">
-		<h2> View </h2> 
-  		<input  type="checkbox">
-  	<div class="slider round"></div>
+		<h2 id="current_view">Public Pantry</h2> 
+		<!-- default checkbox hided, slider round defined in css -->
+		<input  id="view_swithcer" type="checkbox" onclick="swith_view()">
+		<div class="slider round"></div>
+
+		<script>
+			function swith_view() {
+				var view = document.getElementById("view_swithcer").checked;
+				if(view) {
+					document.getElementById("current_view").innerHTML = "Private Pantry";
+					$(".private_shelf").show();
+					$(".public_shelf").hide();
+				}
+				else {
+					document.getElementById("current_view").innerHTML = "Public Pantry";
+					$(".private_shelf").hide();
+					$(".public_shelf").show();
+				}
+			}
+		</script>
+
 	</label>
 
 	<!--Wood: http://www.technocrazed.com/wp-content/uploads/2015/12/Wood-Wallpaper-Background-22.jpg-->
+
 	<ul class="container">
-  		<ul class="shelves">
-  			{{#each item}}
-  				<li herf="/item/{{item_ID}}" class = "food">
-  					{{item_name}}
-  				</li>
-  			{{/each}}
-  		</ul>
-  		<style>
-  		</style>
-	</ul>
+  			<ul class="private_shelf">
+	  			{{#each item}}
+	  				<li herf="/item/{{item_ID}}" class = "food">
+	  					{{item_name}}
+	  					<img src="{{item_imageURL}}" class="food_icon">
+	  					</img> 
+	  					<!--
+	  					<p>Amount: {{amount}} {{unit}}</p>
+	  					<p>Expiring on: {{expiration_month}}/{{expiration_date}}/{{expiration_year}}</p>
+	  					-->
+	  				</li>
+	  				
 
-
-
-
-	<!--
-	<div class="flex-item">
-	<div class="container">
-		<div class="title">
-				<h1>My Pantry</h1>
-		</div>
-	</span>
-  		<button class="hamburger">&#9776;</button>
-  		<button class="cross">&#735;</button>
-	</header>
-	<div class="menu">
-  		<ul>
-    		<a href="/home"><li>Home</li></a>
-    		<a href="#"><li>Receipt</li></a>
-    		<a href="/history"><li>History</li></a>
-    		<a href="/account"><li>Account</li></a>
-  		</ul>
-		</div> 
-	
-		<div class="pantry_shelf" id="home_shelf">
-			<table>
-				{{#each item}}
-				<div class="item-wrapper">
-					<a href="/item/{{item_ID}}" class="click-listener">
-						<img src="{{ imgURL }}" class="img-responsive" />
-						<p class="text_centered">{{ item_name }}</p>
-					</a>
-					<hr>
-				</div>
-				{{/each}}
-			</table>
-		</div>
-
-		<table class="bottom_button_table" align="center">
-			<tr>
-				<td>
-					<a href="/add" class="floating_plus_icon">
-						<button id="add_item">Add</button>
-					</a>
-				</td>
-				<td>
-					<a href="#" class="edit_item">
-						<button id="edit_item">Edit</button>
-					</a>
-				</td>
-			</tr>
-		</table>
-
+	  			{{/each}}
+  			</ul>
 		
 	</div>
-	-->
 	<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 	<script>
   		// Initialize Firebase
@@ -131,6 +101,24 @@
   		};
   		firebase.initializeApp(config);
 	</script>
+
+  			<ul class="public_shelf">
+	  			{{#each item}}
+	  				{{#if shareable}}
+		  				<li herf="/item/{{item_ID}}" class = "food">
+		  					{{item_name}}
+		  					<img src="{{item_imageURL}}" class="food_icon">
+		  					</img>
+		  					<!--
+		  					<p>Amount: {{amount}} {{unit}}</p>
+	  						<p>Expiring on: {{expiration_month}}/{{expiration_date}}/{{expiration_year}}</p>
+	  					-->
+		  				</li>
+		  			{{/if}}
+	  			{{/each}}
+  			</ul>
+	</ul>
+>>>>>>> 3600ba22a9c9da93f509c371aefed0f03ed9101f
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="../js/jquery-1.11.0.js"></script>
 	<script src="../js/bootstrap.js"></script>
