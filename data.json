@@ -107,7 +107,7 @@
 		{
 			"receipt_ID": "2",
 			"item_ID": "2002",
-			"item_catalog": "grainn",
+			"item_catalog": "grain",
 			"item_name": "flour",
 			"item_imageURL": "/image/item_icon/flour.png",
 			"expiration_month": "10",
@@ -139,8 +139,11 @@
 			"wasted": "1",
 			"used_up": "0"
 		}
+	], 
+
+	"list_item": [
+		{
+			"name": "some item"
+		}
 	]
-
-
-
 }

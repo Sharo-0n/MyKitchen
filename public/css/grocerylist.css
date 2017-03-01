@@ -1,0 +1,48 @@
+
+
+.grocery_list{
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  position:  center;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 10px;
+  width: 80%;
+  height: 100vh;
+  margin-top: 2vh;  
+  line-height: 150px;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  background-image: url("http://wallpapercave.com/wp/ARBuPnm.jpg");
+  overflow: auto;
+  align-content: flex-start;
+}
+
+.food:hover .info{
+  display:block;
+}
+.food_icon{
+  padding: 1px;
+  height: 100%;
+  width: auto;
+  max-width: 100px;
+  max-height: 100px;
+  margin: 30px;
+  overflow: auto;
+}
+
+#submitBtn {
+  font-size: 24px;
+  padding: 20px 20px;
+  margin-top: 30px;
+  text-align:center;
+  width: 250px;
+}

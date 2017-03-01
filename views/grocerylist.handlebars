@@ -21,7 +21,7 @@
 	<div class="menu">
   		<ul>
   			<a href="/home"><li> My Pantry </li></a>
-    		<a href="/history"><li> History </li></a>
+    		<a href="/grocerylist"><li>Grocery List</li></a>
     		<a href="/add"><li> Add Item </li></a>
     		<a href="/account"><li>Account Settings</li></a>
   		</ul>
@@ -41,11 +41,11 @@
 
 	</div>
 
-	<!-- Title: MyPantry -->
+	<!--grocery list formated page--> 
 	<div class = "title">
-	<h1>Add Item</h1>
+	<h1>Grocery List</h1>
 	<ul class="contains">
-		<form id="addItemForm" role="form" method="get" action="/addItem">
+		<form id="addItemForm" role="form" method="get" action="/addlistItem">
 			<ul class="flex-outer">
 				<li></li>
       			<li>
@@ -53,22 +53,12 @@
         			<input type="text" placeholder="Enter item name here" name = "item_name">
       			</li>
       			<li>
-     				<label for="date" class="col-2 col-form-label">Expiration Date</label>
-  					<div class="col-10">
-    				<input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-      			</li>
-      			<li>
-        			<label for="price">Price</label>
-        			<input type="text" placeholder="Price" name="total_price">
-      			</li>
-      			<li><label class="form-check-label">
-      				<input type="checkbox" for="shareable" name="shareable">Check me out</label>
-      			</li>
-      			<li>
         			<button type="submit">Submit</button>
       			</li>
       			<li></li>
     		</ul>
+
+
 	<!--
 	</div>
 	<form class="addItemForm" role="form" method="get" action="/addItem">
@@ -153,6 +143,21 @@
 	-->
 	</form>
 </ul>
+
+<ul class="container">
+  			<ul class="grocery_list">
+	  			{{#each list_item}}
+	  				<li herf="/list_item/{{name}}" class = "food">
+	  					{{name}}
+	  					<!--
+	  					<p>Amount: {{amount}} {{unit}}</p>
+	  					<p>Expiring on: {{expiration_month}}/{{expiration_date}}/{{expiration_year}}</p>
+	  					-->
+	  				</li>
+	  			{{/each}}
+  			</ul>
+</ul>
+
 		
 
 	<script src="https://code.jquery.com/jquery.js"></script>
