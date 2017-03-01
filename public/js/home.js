@@ -2,19 +2,19 @@
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
-	initializePage();
+  initializePage();
 
-	//$(".click-listener").click(function(event) {
-	//	event.preventDefault();
-		
-	//})
+  //$(".click-listener").click(function(event) {
+  //  event.preventDefault();
+    
+  //})
 })
 
 /*
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	console.log("Javascript connected!");
+  console.log("Javascript connected!");
 }
 
 $( ".private_shelf" ).hide();
@@ -54,3 +54,24 @@ window.onclick = function(event) {
   }
 }
 
+var data;
+
+function removeItem(cid) {
+  console.log("removing");
+  if (data) {
+    data.item.splice(cid, 1);
+  } else {
+    console.log("data is not fetched yet")
+  }
+}
+
+
+$.getJSON('/data.json', function(data) {
+  //do stuff with your data here
+  data = data;
+});
+
+/* function to toggle the locations of buttons relative to window size */
+/*function windowSize() {
+  var w= 
+}*/
