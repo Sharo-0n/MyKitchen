@@ -1,40 +1,11 @@
 {
 	
-	"receipts": [
 
-		{
-			"receipt_ID": "1",
-			"purchase_month": "2",
-			"purchase_day": "12",
-			"purchase_year": "2017",
-			"seller": "Trader Joe's",
-			"#_of_items": "3",
-			"items_array": [ "1001", "1002", "1003" ],
-			"imageURL": "",
-			"uploader_ID": "Dominic",
-			"note": "Dominic bought this at TJ",
-			"deleted": "0"
-		},
-
-		{
-			"receipt_ID": "2",
-			"purchase_month": "2",
-			"purchase_day": "10",
-			"purchase_year": "2017",
-			"seller": "Von's",
-			"#_of_items": "2",
-			"items_array": [ "2001", "2002" ],
-			"imageURL": "",
-			"uploader_ID": "Dominic",
-			"note": "Dominic bought this at Vons",
-			"deleted": "0"
-		}
-	],
 
 	"item": [
 		{
-			"receipt_ID": "1",
-			"item_ID": "1001",
+			"item_ID": "1",
+			"owner": "Dominic",
 			"item_catalog": "fruit",
 			"item_name": "Apple",
 			"item_imageURL": "/image/item_icon/apple.png",
@@ -51,8 +22,8 @@
 		},
 
 		{
-			"receipt_ID": "1",
-			"item_ID": "1002",
+			"item_ID": "2",
+			"owner": "Dominic",
 			"item_catalog": "drink",
 			"item_name": "Diet Coke",
 			"item_imageURL": "/image/item_icon/drinks.png",
@@ -69,8 +40,8 @@
 		},
 
 		{
-			"receipt_ID": "1",
-			"item_ID": "1003",
+			"item_ID": "3",
+			"owner": "Dominic",
 			"item_catalog": "vegetable",
 			"item_name": "lettuce",
 			"item_imageURL": "/image/item_icon/lettuce.png",
@@ -87,8 +58,8 @@
 		},
 
 		{
-			"receipt_ID": "2",
-			"item_ID": "2001",
+			"item_ID": "4",
+			"owner": "Dominic",
 			"item_catalog": "fruit",
 			"item_name": "Apple",
 			"item_imageURL": "/image/item_icon/apple.png",
@@ -105,8 +76,8 @@
 		},
 
 		{
-			"receipt_ID": "2",
-			"item_ID": "2002",
+			"item_ID": "5",
+			"owner": "Dominic",
 			"item_catalog": "grain",
 			"item_name": "flour",
 			"item_imageURL": "/image/item_icon/flour.png",
@@ -123,8 +94,8 @@
 		},
 
 		{
-			"receipt_ID": "2",
-			"item_ID": "2003",
+			"item_ID": "6",
+			"owner": "Dominic",
 			"item_catalog": "dairy",
 			"item_name": "non-fat milk",
 			"item_imageURL": "/image/item_icon/milk.png",
@@ -137,6 +108,42 @@
 			"total_price": "5.99",
 			"shareable": false,
 			"wasted": "1",
+			"used_up": "0"
+		},
+
+		{
+			"item_ID": "7",
+			"owner": "Sarah",
+			"item_catalog": "vegetable",
+			"item_name": "onion",
+			"item_imageURL": "/image/item_icon/onion.png",
+			"expiration_month": "3",
+			"expiration_day": "14",
+			"expiration_year": "2017",
+			"price_per_unit": "0.99",
+			"unit": "lbs",
+			"amount": "1",
+			"total_price": "0.99",
+			"shareable": true,
+			"wasted": "0",
+			"used_up": "0"
+		},
+
+		{
+			"item_ID": "8",
+			"owner": "Sarah",
+			"item_catalog": "fruit",
+			"item_name": "orange",
+			"item_imageURL": "/image/item_icon/orange.png",
+			"expiration_month": "3",
+			"expiration_day": "14",
+			"expiration_year": "2017",
+			"price_per_unit": "0.99",
+			"unit": "lbs",
+			"amount": "1",
+			"total_price": "0.99",
+			"shareable": true,
+			"wasted": "0",
 			"used_up": "0"
 		}
 	], 
