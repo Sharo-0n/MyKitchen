@@ -195,6 +195,7 @@ header{
   color:#666;
 }
 
+
 body{
   background: linear-gradient(top,#76b852, #b2f2bb);
   background: #76b852; /* For browsers that do not support gradients */
@@ -221,6 +222,20 @@ body{
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+}
+
+.likeBtn {
+    line-height: 2em;
+    height:50px;
+    top: 0;
+    right: 80px;
+    margin-top: 0;
+    margin-left: 60%;
+    margin-right: 10%;
+    padding: 2px 30px;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
 }
 
 .addButton {
