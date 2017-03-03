@@ -120,13 +120,13 @@ header{
 .hamburger{
   background:none;
   position:absolute;
-  top:0;
+  top:5px;
   left:0;
   line-height:45px;
-  padding:5px 15px 0px 15px;
+  padding:5px 15px 0px 10px;
   color:#FF7F50;
   border:0;
-  font-size:1.4em;
+  font-size:3em;
   font-weight:bold;
   cursor:pointer;
   outline:none;
