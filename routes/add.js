@@ -1,5 +1,5 @@
 var data = require("../data.json");
-var newItem_id = 9;
+var newItem_id = 8;
 
 exports.view = function(req, res){
 	console.log("add");

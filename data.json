@@ -1,10 +1,7 @@
 {
-	
-
-
 	"item": [
 		{
-			"item_ID": "1",
+			"item_ID": "0",
 			"owner": "Dominic",
 			"item_category": "fruit",
 			"item_name": "Apple",
@@ -23,7 +20,7 @@
 		},
 
 		{
-			"item_ID": "2",
+			"item_ID": "1",
 			"owner": "Dominic",
 			"item_category": "drink",
 			"item_name": "Diet Coke",
@@ -43,7 +40,7 @@
 		},
 
 		{
-			"item_ID": "3",
+			"item_ID": "2",
 			"owner": "Dominic",
 			"item_category": "vegetable",
 			"item_name": "lettuce",
@@ -62,7 +59,7 @@
 		},
 
 		{
-			"item_ID": "4",
+			"item_ID": "3",
 			"owner": "Dominic",
 			"item_category": "fruit",
 			"item_name": "Apple",
@@ -81,7 +78,7 @@
 		},
 
 		{
-			"item_ID": "5",
+			"item_ID": "4",
 			"owner": "Dominic",
 			"item_category": "grain",
 			"item_name": "flour",
@@ -100,7 +97,7 @@
 		},
 
 		{
-			"item_ID": "6",
+			"item_ID": "5",
 			"owner": "Dominic",
 			"item_category": "dairy",
 			"item_name": "non-fat milk",
@@ -119,7 +116,7 @@
 		},
 
 		{
-			"item_ID": "7",
+			"item_ID": "6",
 			"owner": "Sarah",
 			"item_category": "vegetable",
 			"item_name": "onion",
@@ -138,7 +135,7 @@
 		},
 
 		{
-			"item_ID": "8",
+			"item_ID": "7",
 			"owner": "Sarah",
 			"item_category": "fruit",
 			"item_name": "orange",
@@ -156,6 +153,23 @@
 			"description": "There's no description just yet"
 		}
 	], 
+
+	"icon_imageURLs": [
+		{
+			"name": "orange",
+			"url": "/image/item_icon/orange.png"
+		},
+
+		{
+			"name": "apple",
+			"url": "/image/item_icon/apple.png"
+		},
+
+		{
+			"name": "onion",
+			"url": "/image/item_icon/onion.png"
+		}
+	],
 
 	"list_item": [
 		{

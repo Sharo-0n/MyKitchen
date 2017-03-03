@@ -75,6 +75,7 @@
 	  			<ul class="public_shelf">
 		  			{{#each item}}
 		  				{{#if shareable}}
+
 			  				
 				  				<li  class = "food">
 				  				<a 	id="modalInvoker">
@@ -91,6 +92,13 @@
 			  						<p>{{description}}</p>
 			  					</div>
 			  				</div>
+
+			  				<li herf="/item/{{item_ID}}" class = "food">
+			  					{{item_name}}
+			  					<img src="{{item_imageURL}}" class="food_icon">
+			  					<button onclick="removeItem({{item_index}})" class="button rmBtn">Used up</button>	
+			  				</li>
+
 			  			{{/if}}
 		  			{{/each}}
 	  			</ul>
