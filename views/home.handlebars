@@ -62,7 +62,7 @@
 		<ul class="container">
 	  			<ul class="private_shelf">
 		  			{{#each item}}
-		  				<li herf="/item/{{item_ID}}" class = "food">
+		  				<li href="/item/{{item_ID}}" class = "food">
 		  					{{item_name}}
 		  					<img src="{{item_imageURL}}" class="food_icon">
 							<button onclick="removeItem({{item_index}})" class="button rmBtn">Remove Item</button>	  
@@ -75,11 +75,30 @@
 	  			<ul class="public_shelf">
 		  			{{#each item}}
 		  				{{#if shareable}}
+
+			  				
+				  				<li  class = "food">
+				  				<a 	id="modalInvoker">
+				  					{{item_name}}
+				  					<img src="{{item_imageURL}}" class="food_icon">
+				  					<button onclick="removeItem({{item_index}})" class="button rmBtn">Remove Item</button>	
+				  				</a>
+
+				  				</li>
+			  				
+			  				<div id="myModal" class="modal">
+			  					<div class="modal-content">
+			  						<span class="close">&times;</span>
+			  						<p>{{description}}</p>
+			  					</div>
+			  				</div>
+
 			  				<li herf="/item/{{item_ID}}" class = "food">
 			  					{{item_name}}
 			  					<img src="{{item_imageURL}}" class="food_icon">
 			  					<button onclick="removeItem({{item_index}})" class="button rmBtn">Used up</button>	
 			  				</li>
+
 			  			{{/if}}
 		  			{{/each}}
 	  			</ul>
