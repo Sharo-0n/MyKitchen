@@ -53,7 +53,7 @@ window.onclick = function(event) {
     }
   }
 }
-
+/*
 var data;
 
 function removeItem(cid) {

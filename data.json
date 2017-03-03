@@ -1,7 +1,7 @@
 {
 	"item": [
 		{
-			"item_ID": "0",
+			"item_ID": 0,
 			"owner": "Dominic",
 			"item_category": "fruit",
 			"item_name": "Apple",
@@ -15,12 +15,12 @@
 			"total_price": "6.37",
 			"shareable": true,
 			"wasted": "0",
-			"used_up": "0",
+			"used_up": 0,
 			"description": "There's no description just yet"
 		},
 
 		{
-			"item_ID": "1",
+			"item_ID": 1,
 			"owner": "Dominic",
 			"item_category": "drink",
 			"item_name": "Diet Coke",
@@ -34,13 +34,13 @@
 			"total_price": "4.95",
 			"shareable": true,
 			"wasted": "0",
-			"used_up": "0",
+			"used_up": 0,
 			"description": "There's no description just yet"
 
 		},
 
 		{
-			"item_ID": "2",
+			"item_ID": 2,
 			"owner": "Dominic",
 			"item_category": "vegetable",
 			"item_name": "lettuce",
@@ -54,12 +54,12 @@
 			"total_price": "1.98",
 			"shareable": false,
 			"wasted": "0",
-			"used_up": "0",
+			"used_up": 0,
 			"description": "There's no description just yet"
 		},
 
 		{
-			"item_ID": "3",
+			"item_ID": 3,
 			"owner": "Dominic",
 			"item_category": "fruit",
 			"item_name": "Apple",
@@ -73,12 +73,12 @@
 			"total_price": "5.07",
 			"shareable": true,
 			"wasted": "0",
-			"used_up": "1",
+			"used_up": 0,
 			"description": "There's no description just yet"
 		},
 
 		{
-			"item_ID": "4",
+			"item_ID": 4,
 			"owner": "Dominic",
 			"item_category": "grain",
 			"item_name": "flour",
@@ -92,12 +92,12 @@
 			"total_price": "13.99",
 			"shareable": false,
 			"wasted": "0",
-			"used_up": "0",
+			"used_up": 0,
 			"description": "There's no description just yet"
 		},
 
 		{
-			"item_ID": "5",
+			"item_ID": 5,
 			"owner": "Dominic",
 			"item_category": "dairy",
 			"item_name": "non-fat milk",
@@ -111,12 +111,12 @@
 			"total_price": "5.99",
 			"shareable": false,
 			"wasted": "1",
-			"used_up": "0",
+			"used_up": 0,
 			"description": "There's no description just yet"
 		},
 
 		{
-			"item_ID": "6",
+			"item_ID": 6,
 			"owner": "Sarah",
 			"item_category": "vegetable",
 			"item_name": "onion",
@@ -130,12 +130,12 @@
 			"total_price": "0.99",
 			"shareable": true,
 			"wasted": "0",
-			"used_up": "0",
+			"used_up": 0,
 			"description": "There's no description just yet"
 		},
 
 		{
-			"item_ID": "7",
+			"item_ID": 7,
 			"owner": "Sarah",
 			"item_category": "fruit",
 			"item_name": "orange",
@@ -149,7 +149,7 @@
 			"total_price": "0.99",
 			"shareable": true,
 			"wasted": "0",
-			"used_up": "0",
+			"used_up": 0,
 			"description": "There's no description just yet"
 		}
 	], 
