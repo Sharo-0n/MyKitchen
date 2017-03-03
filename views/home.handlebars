@@ -168,11 +168,34 @@
 	  			<ul class="public_shelf">
 		  			{{#each item}}
 		  				{{#if shareable}}
-			  				<li herf="/item/{{item_ID}}" class = "food">
-			  					{{item_name}}
-			  					<img src="{{item_imageURL}}" class="food_icon">
-			  					<button onclick="removeItem({{item_index}})" class="button rmBtn">Used up</button>	
-			  				</li>
+
+			  			
+	  				
+		  				<li  class = "food">
+		  					{{item_name}}
+		  					<img src="{{item_imageURL}}" class="food_icon">
+
+		  					<div class="buttonContainer">
+		  					<!-- activate pop up window here -->
+		  					<button id="myBtn" class="button">More...</button>
+
+		  					<button onclick="removeItem({{item_index}})" class="button rmBtn">Remove Item</button>	
+		  					</div>
+		  				</li>
+		  				
+		  				<!-- The pop up window -->
+		  				<div id="myModal" class="modal">
+		  					<div class="modal-content">
+		  						<span class="close">&times;</span>
+		  						{{item_name}}
+		  						<img src="{{item_imageURL}}" class="food_icon">
+		  						<p>{{description}}</p>
+		  						<button onclick="removeItem({{item_index}})" class="button rmBtn">Remove Item</button>
+		  					</div>
+		  				</div>
+
+		  				
+
 			  			{{/if}}
 		  			{{/each}}
 	  			</ul>
