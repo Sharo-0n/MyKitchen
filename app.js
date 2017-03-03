@@ -11,7 +11,6 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var home = require('./routes/home');
 var add = require('./routes/add');
-var history = require('./routes/history');
 var account = require('./routes/account');
 var settings = require('./routes/settings');
 var grocerylist = require('./routes/grocerylist');
@@ -48,7 +47,6 @@ app.get('/homenav',home.viewNav);
 app.get('/addItem', add.addItem);
 app.get('/add', add.view);
 
-app.get('/history', history.view);
 app.get('/account', account.view);
 app.get('/settings', settings.view);
 app.get('/grocerylist', grocerylist.view);
