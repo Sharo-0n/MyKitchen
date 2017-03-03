@@ -165,7 +165,7 @@
 		  					<!-- activate pop up window here -->
 		  					<button id="myBtn" class="button">More...</button>
 
-		  					<form id="removeItemForm" role="form" method="get" action="/remove">
+		  					<form id="removeItemForm" class="delete" role="form" method="get" action="/remove">
 		  						<input class="hide" value="{{item_ID}}" name="item_ID">
 								<input type="submit" id="submitBtn" class="button rmBtn" value="Remove"></input>
 							</form>  
@@ -205,7 +205,7 @@
 		  					<!-- activate pop up window here -->
 		  					<button id="myBtn" class="button">More...</button>
 							
-							<form id="removeItemForm" role="form" method="get" action="/remove">
+							<form id="removeItemForm" class="delete" role="form" method="get" action="/remove">
 		  						<input class="hide" value="{{item_ID}}" name="item_ID">
 								<input type="submit" id="submitBtn" class="button rmBtn" value="Remove"></input>
 							</form>  
@@ -221,7 +221,7 @@
 		  						<img src="{{item_imageURL}}" class="food_icon">
 		  						<p>{{description}}</p>
 		  						
-		  						<form id="removeItemForm" role="form" method="get" action="/remove">
+		  						<form id="removeItemForm" class="delete" role="form" method="get" action="/remove">
 		  						<input class="hide" value="{{item_ID}}" name="item_ID">
 								<input type="submit" id="submitBtn" class="button rmBtn" value="Remove"></input>
 							</form>  

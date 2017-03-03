@@ -20,6 +20,10 @@ h2{
   word-spacing:-2pt;
   font-family: Syncopate;  
 }
+.delete{
+  display: flex;
+  
+}
 
 .floating_plus_icon {
   background:none;
@@ -302,6 +306,9 @@ body{
 
 .buttonContainer {
   max-height: 2em;
+  display: flex;
+  flex-direction: row;
+
 }
 
 #myBtn {
@@ -326,20 +333,21 @@ body{
 }
 
 
-.rmBtn {
-    margin:0 0.6em;
+#submitBtn.rmBtn {
+    margin: 0 0.6em;
+    margin-left: 2em;
     margin-bottom: 10px;
-    max-height: 40px;
+    width: 6em;
     font-size: xx-small;
     text-align: center;
     padding: 0 5px;
-    background-color: white; 
-    color: #DF5E5E; 
+    background-color: white;
+    color: #DF5E5E;
     border: 2px solid #DF5E5E;
     line-height: 3em;
 }
 
-.rmBtn:hover {
+#submitBtn.rmBtn:hover {
     background-color: #DF5E5E;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -502,4 +510,8 @@ p{
 p {
   line-height: 1.3em;
 
+}
+
+.hide {
+  display: none;
 }
