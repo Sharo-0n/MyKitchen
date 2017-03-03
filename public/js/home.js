@@ -81,7 +81,7 @@ $.getJSON('/data.json', function(data) {
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var invoker = document.getElementById("modalInvoker");
+var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
