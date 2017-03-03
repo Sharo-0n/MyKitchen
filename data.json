@@ -37,6 +37,7 @@
 			"used_up": 0,
 			"description": "There's no description just yet"
 
+
 		},
 
 		{
@@ -75,6 +76,7 @@
 			"wasted": "0",
 			"used_up": 0,
 			"description": "There's no description just yet"
+
 		},
 
 		{
@@ -94,6 +96,7 @@
 			"wasted": "0",
 			"used_up": 0,
 			"description": "There's no description just yet"
+
 		},
 
 		{
@@ -113,6 +116,7 @@
 			"wasted": "1",
 			"used_up": 0,
 			"description": "There's no description just yet"
+
 		},
 
 		{
@@ -132,6 +136,7 @@
 			"wasted": "0",
 			"used_up": 0,
 			"description": "There's no description just yet"
+
 		},
 
 		{
@@ -151,10 +156,15 @@
 			"wasted": "0",
 			"used_up": 0,
 			"description": "There's no description just yet"
+
 		}
 	], 
 
 	"icon_imageURLs": [
+		{
+			"name": "orange",
+			"url": "/image/item_icon/orange.png"
+		},
 
 		{
 			"name": "apple",
@@ -162,77 +172,9 @@
 		},
 
 		{
-			"name": "cabbage",
-			"url": "/image/item_icon/cabbage.png"
-		},
-
-		{
-			"name": "cake",
-			"url": "/image/item_icon/cake.png"
-		},
-		
-		{
-			"name": "coffee",
-			"url": "/image/item_icon/coffee.png"
-		},
-
-		{
-			"name": "dairy",
-			"url": "/image/item_icon/cow.png"
-		},
-		
-		{
-			"name": "soda",
-			"url": "/image/item_icon/drinks.png"
-		},
-		
-		{
-			"name": "flour",
-			"url": "/image/item_icon/flour.png"
-		},
-		
-		{
-			"name": "fruits or vegetables",
-			"url": "/image/item_icon/fruits_vegetables.png"
-		},
-		
-		{
-			"name": "lemon",
-			"url": "/image/item_icon/lemon.png"
-		},
-		
-		{
-			"name": "lettuce",
-			"url": "/image/item_icon/lettuce.png"
-		},
-		
-		{
-			"name": "milk",
-			"url": "/image/item_icon/milk.png"
-		},
-		
-		{
-			"name": "orange",
-			"url": "/image/item_icon/orange.png"
-		},
-
-
-		{
 			"name": "onion",
 			"url": "/image/item_icon/onion.png"
-		},
-
-		{
-			"name": "toast",
-			"url": "/image/item_icon/toast.png"
-		},
-
-		{
-			"name": "tomato",
-			"url": "/image/item_icon/tomato.png"
 		}
-		
-		
 	],
 
 	"list_item": [
