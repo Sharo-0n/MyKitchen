@@ -76,28 +76,29 @@
 		  			{{#each item}}
 		  				{{#if shareable}}
 
-			  				
-				  				<li  class = "food">
-				  				<a 	id="modalInvoker">
-				  					{{item_name}}
-				  					<img src="{{item_imageURL}}" class="food_icon">
-				  					<button onclick="removeItem({{item_index}})" class="button rmBtn">Remove Item</button>	
-				  				</a>
+	  				
+		  				<li  class = "food">
+		  					{{item_name}}
+		  					<img src="{{item_imageURL}}" class="food_icon">
 
-				  				</li>
-			  				
-			  				<div id="myModal" class="modal">
-			  					<div class="modal-content">
-			  						<span class="close">&times;</span>
-			  						<p>{{description}}</p>
-			  					</div>
-			  				</div>
+		  					<div class="buttonContainer">
+		  					<!-- activate pop up window here -->
+		  					<button id="myBtn" class="button">More...</button>
 
-			  				<li herf="/item/{{item_ID}}" class = "food">
-			  					{{item_name}}
-			  					<img src="{{item_imageURL}}" class="food_icon">
-			  					<button onclick="removeItem({{item_index}})" class="button rmBtn">Used up</button>	
-			  				</li>
+		  					<button onclick="removeItem({{item_index}})" class="button rmBtn">Remove Item</button>	
+		  					</div>
+		  				</li>
+		  				
+		  				<!-- The pop up window -->
+		  				<div id="myModal" class="modal">
+		  					<div class="modal-content">
+		  						<span class="close">&times;</span>
+		  						{{item_name}}
+		  						<img src="{{item_imageURL}}" class="food_icon">
+		  						<p>{{description}}</p>
+		  						<button onclick="removeItem({{item_index}})" class="button rmBtn">Remove Item</button>
+		  					</div>
+		  				</div>
 
 			  			{{/if}}
 		  			{{/each}}
