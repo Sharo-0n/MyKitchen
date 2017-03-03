@@ -1,7 +1,4 @@
 {
-	
-
-
 	"item": [
 		{
 			"item_ID": "0",
@@ -147,6 +144,23 @@
 			"used_up": "0"
 		}
 	], 
+
+	"icon_imageURLs": [
+		{
+			"name": "orange",
+			"url": "/image/item_icon/orange.png"
+		},
+
+		{
+			"name": "apple",
+			"url": "/image/item_icon/apple.png"
+		},
+
+		{
+			"name": "onion",
+			"url": "/image/item_icon/onion.png"
+		}
+	],
 
 	"list_item": [
 		{
