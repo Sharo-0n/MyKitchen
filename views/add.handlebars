@@ -19,6 +19,70 @@
 
 <body>
 
+    {{#if nav}}
+<header>
+  		<button class="hamburger">&#9776;</button>
+  		<!--<button class="cross">&#735;</button>-->
+	</header>
+
+	<div class="menu">
+  		<ul>
+  			<a href="/home"><li> My Pantry </li></a>
+    		<a href="/grocerylist"><li>Grocery List</li></a>
+    		<a href="/add"><li> Add Item </li></a>
+    		<a href="/account"><li>Account Settings</li></a>
+  		</ul>
+  		
+  		<!--LogOut Button-->
+  		<br /><br /><br />
+	  	<table class="bottom_button_table" align="center">
+			<tr>
+				<td>
+					<a href="/">
+						<button class="button logoutButton">LOGOUT</button>
+					</a>
+				</td>
+			</tr>
+		</table>
+
+
+	</div>
+
+	<!-- Title: MyPantry -->
+	<div class = "title">
+	<h1>Add Item</h1>
+	<ul class="contains">
+		<form id="addItemForm" role="form" method="get" action="/addItem">
+			<ul class="flex-outer">
+				<li></li>
+      			<li>
+        			<label for="item_name">Item Name</label>
+        			<input type="text" placeholder="Enter item name here" name = "item_name">
+      			</li>
+      			<li>
+     				<label for="date" class="col-2 col-form-label">Expiration Date</label>
+  					<div class="col-10">
+    				<input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+      			</li>
+      			<li>
+        			<label for="price">Price</label>
+        			<input type="text" placeholder="Price" name="total_price">
+      			</li>
+      			<li><label class="form-check-label">
+      				<input type="checkbox" for="shareable" name="shareable">Check me out</label>
+      			</li>
+      			<li>
+        			<button type="submit">Submit</button>
+      			</li>
+      			<li></li>
+    		</ul>
+    		</form>
+</ul>
+
+
+
+    {{else}}
+
 	<header>
   		<button class="hamburger">&#9776;</button>
   		<!--<button class="cross">&#735;</button>-->
@@ -66,7 +130,7 @@
       			</li>
 
       			<li><label for="description">Item Description</label>
-      				<input type="text" placeholder="How do you plan to eat/cook? Any plans with this agent?" name="category">
+      				<input type="text" placeholder="How do you plan to eat/cook? Any plans with this agent?" name="description">
       			</li>
 
       			<li><label class="form-check-label">
@@ -82,6 +146,7 @@
 	
 	</form>
 </ul>
+	{{/if}}
 		
 	<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
 	<script src="https://code.jquery.com/jquery.js"></script>
