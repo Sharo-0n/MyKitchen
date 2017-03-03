@@ -2,13 +2,16 @@
 
 <html>
 <head>
-	<link href="/css/add.css" rel="stylesheet">
+	<link href="../css/add.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Syncopate" />
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/bootstrap-theme.css">
 	<link rel="stylesheet" href="../css/home.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
 </head>
 
 <body>
@@ -30,113 +33,49 @@
         			<label for="item_name">Item Name</label>
         			<input type="text" placeholder="Enter item name here" name = "item_name">
       			</li>
+
       			<li>
      				<label for="date" class="col-2 col-form-label">Expiration Date</label>
   					<div class="col-10">
-    				<input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+    				<input class="form-control" type="date" value="2017-03-03" id="example-date-input">
       			</li>
+
       			<li>
         			<label for="price">Price</label>
         			<input type="text" placeholder="Price" name="total_price">
       			</li>
-      			<li><label class="form-check-label">
-      				<input type="checkbox" for="shareable" name="shareable">Check me out</label>
+
+      			<li>
+      				<label for="icon">Icon</label>
+      				<select name="icon" id="icon" class="icon-menu">
+      					<option style="padding-left:0px;" value="">Select an Icon</option>
+      					{{#each icon_imageURLs}}
+							<option style="background-image:url({{url}});" value="{{name}}" >{{name}}</option>
+						{{/each}}
+
+					</select>
       			</li>
+
+
+      			<li><label class="form-check-label">
+      				<input type="checkbox" for="shareable" name="shareable">This item is for share</label>
+      			</li>
+
       			<li>
         			<button type="submit">Submit</button>
       			</li>
       			<li></li>
     		</ul>
-	<!--
-	</div>
-	<form class="addItemForm" role="form" method="get" action="/addItem">
-		<h3>Add an item</h3>
-
-		<div>
-			<label for="item_name">Item Name</label>
-			<br/>
-			<input type="text" name="item_name">
-		</div>
-		<br>
-
-
-		<div class = ExpirationDate>
-			<label>Expiration Date</label>
-			<br/>
-			<select name="expiration_month">
-				<option value="1">Jan</option>
-				<option value="2">Feb</option>
-				<option value="3">Mar</option>
-				<option value="4">Apr</option>
-				<option value="5">May</option>
-				<option value="6">Jun</option>
-				<option value="7">Jul</option>
-				<option value="8">Aug</option>
-				<option value="9">Sep</option>
-				<option value="10">Oct</option>
-				<option value="11">Nov</option>
-				<option value="12">Dec</option>
-			</select>
-
-			<select name="expiration_day">
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
-				<option value="10">10</option>
-				<option value="11">11</option>
-				<option value="12">12</option>
-				<option value="13">13</option>
-				<option value="14">14</option>
-				<option value="15">15</option>
-				<option value="16">16</option>
-				<option value="17">17</option>
-				<option value="18">18</option>
-				<option value="19">19</option>
-				<option value="20">20</option>
-				<option value="21">21</option>
-				<option value="22">22</option>
-				<option value="23">23</option>
-				<option value="24">24</option>
-				<option value="25">25</option>
-				<option value="26">26</option>
-				<option value="27">27</option>
-				<option value="28">28</option>
-				<option value="29">29</option>
-				<option value="30">30</option>
-				<option value="31">31</option>
-			</select>
-
-			<input type="text" value="2017" placeholder="year" name="expiration_year">
-		
-		</div>
-		<br>
-
-		<div class = Prices>
-			<label>Price</label>
-			<br/>
-			<input type="text" name="total_price">
-			<br>
-		</div>
-
-
-
-
-		<input type="submit" id="submitBtn" class="button addButton" value="Add the item"></input>
-	-->
+	
 	</form>
 </ul>
 		
-
+	<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="../js/jquery-1.11.0.js"></script>
 	<script src="../js/bootstrap.js"></script>
 	<script src="../js/home.js"></script>
+	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
