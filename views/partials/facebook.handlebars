@@ -1,0 +1,31 @@
+<script>
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1265350636883154',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+    FB.getLoginStatus(function(response) {
+      if (response.status === 'connected') {
+        console.log("user logged into facebook and app");
+      } else {
+        console.log("user is not logged into facebook or app");
+        alert("You are not logged into Facebook or the App");
+        window.location.href="/";
+      }
+    });
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+</script>
+
+<script src="/js/facebook.js"></script>
