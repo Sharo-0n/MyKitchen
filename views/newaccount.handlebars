@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+
+<head>
+		<title>SmartKitchen</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/index.css" >
+		<link rel="stylesheet" href="../css/newaccount.css" >
+		<link rel="stylesheet" href="../css/bootstrap.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.css">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Syncopate" />
+</head>
+
+<body>
+	<div class="container">
+		<h1>Smart Kitchen</h1>
+
+		<div class="login-page">
+			<div class="form">
+				<form class="login-form">
+				<h2> Give us your information </h2>
+				    <input id="maintext" type="username" placeholder="username"/>
+					<input type="password" placeholder="password"/>
+					<id="submitBtn" onclick=submitClick() href="/home"><button>Create Account</button></a>
+				</form>
+			</div>
+
+				<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+	<script>
+  	// Initialize Firebase
+  		var config = {
+    		apiKey: "AIzaSyC4kXutHZxmjUJihyGlmhNXwLWmKdgAKxg",
+    		authDomain: "smart-kitchen-29dff.firebaseapp.com",
+    		databaseURL: "https://smart-kitchen-29dff.firebaseio.com",
+    		storageBucket: "smart-kitchen-29dff.appspot.com",
+    		messagingSenderId: "983712922016"
+  		};
+  		firebase.initializeApp(config);
+	</script>
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="../js/jquery-1.11.0.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/home.js"></script>
+	<script src="../js/newaccount.js"></script>
+
+	</body>
+</html>
