@@ -1,4 +1,5 @@
 var data = require("../data.json");
+var newItem_id = 8;
 
 exports.view = function(req, res){
 	console.log("add");
@@ -6,8 +7,6 @@ exports.view = function(req, res){
 };
 
 exports.addItem = function(req, res) {    
-	// Your code goes here
-	console.log(data)
 
 	// Get parameter values
 	var item_name = req.query.item_name;
@@ -17,11 +16,11 @@ exports.addItem = function(req, res) { 
 	var expiration_day = req.query.expiration_day;
 	var expiration_year = req.query.expiration_year;
 	var total_price = req.query.total_price;
-
+	var shareable = req.query.shareable;
+	var description = req.query.description;
 
 	var newItem = {
-		receipt_ID: "3",
-		item_ID: "3001",
+		item_ID: newItem_id,
 		item_catalog: "fruit",
 		item_name: item_name,
 		item_imageURL: "http://lorempixel.com/400/400",
@@ -32,10 +31,12 @@ exports.addItem = function(req, res) { 
 		unit: "lbs",
 		amount: "3.2",
 		total_price: total_price,
+		shareable: shareable,
 		wasted: "0",
-		used_up: "0"
+		used_up: 0,
+		description: description
 	};
-
+	newItem_id++;
 	data.item.push(newItem);
 	// Take you back to index route
 	res.redirect('/home');
