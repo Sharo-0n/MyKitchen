@@ -9,31 +9,27 @@ exports.view = function(req, res){
 exports.addItem = function(req, res) {    
 
 	// Get parameter values
+	var owner = req.query.owner;
+	var item_category = req.query.item_category;
 	var item_name = req.query.item_name;
+	var item_imageURL = req.query.item_imageURL;
 	var expiration_date = req.query.expiration_date;
-	var total_price = req.query.total_price;
-	var expiration_month = req.query.expiration_month;
-	var expiration_day = req.query.expiration_day;
-	var expiration_year = req.query.expiration_year;
-	var total_price = req.query.total_price;
+	var price = req.query.price;
 	var shareable = req.query.shareable;
 	var description = req.query.description;
 
+
 	var newItem = {
 		item_ID: newItem_id,
-		item_catalog: "fruit",
+		owner: owner,
+		item_category: "fruit",
 		item_name: item_name,
-		item_imageURL: "http://lorempixel.com/400/400",
-		expiration_month : expiration_month,
-		expiration_day: expiration_day,
-		expiration_year: expiration_year,
-		price_per_unit: "1.99",
-		unit: "lbs",
-		amount: "3.2",
-		total_price: total_price,
+		item_imageURL: item_imageURL,
+		expiration_date: expiration_date,
+		price: price,
 		shareable: shareable,
-		wasted: "0",
 		used_up: 0,
+		removed: 0,
 		description: description
 	};
 	newItem_id++;

@@ -108,11 +108,12 @@ window.onclick = function(event) {
 $('#myModal').on('show.bs.modal', function (event) {
         var element = $(event.relatedTarget); // the li that triggered the modal to show
         var name = element.find('.food_name').text();
+        var owner = element.find('.owner').text();
         var description = element.find('.item_description').text(); // Extract the value of the .text div inside that li
         var imgSrc = element.find('.food_icon').attr("src");//extract the img src
 
         var modal = $(this);
-        $("#modal_head").text(''+name);
-        $("#popup").html('' + description);
+        $("#modal_head").text(owner+ "'s "+name);
+        $("#popup").html(owner+': ' + description);
         $("#modal_img").attr("src", imgSrc);
     });

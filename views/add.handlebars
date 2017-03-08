@@ -24,7 +24,7 @@
 <header>
   		<button class="hamburger">&#9776;</button>
   		<!--<button class="cross">&#735;</button>-->
-	</header>
+</header>
 
 	<div class="menu">
   		<ul>
@@ -99,35 +99,35 @@
 				<li></li>
       			<li>
         			<label for="item_name">Item Name</label>
-        			<input type="text" placeholder="Enter item name here" name = "item_name">
+        			<input type="text" placeholder="Enter item name here" name="item_name">
       			</li>
 
       			<li>
      				<label for="date" class="col-2 col-form-label">Expiration Date</label>
   					<div class="col-10">
-    				<input class="form-control" type="date" value="2017-03-03" id="example-date-input">
+    				<input class="form-control" type="date" value="2017-03-03" id="example-date-input" name="expiration_date">
       			</li>
 
       			<li>
         			<label for="price">Price</label>
-        			<input type="text" placeholder="Price" name="total_price">
+        			<input type="text" placeholder="Price" name="price">
       			</li>
 
 
       			<li>
       				<label for="icon">Icon</label>
       				<select name="icon" id="icon" class="icon-menu">
-      					<option style="padding-left:0px;" value="">Select an Icon</option>
-      					{{#each icon_imageURLs}}
-							<option style="background-image:url({{url}});" value="{{name}}" >{{name}}</option>
-						{{/each}}
+      				<option style="padding-left:0px;" value="">Select an Icon</option>
+      				{{#each icon_imageURLs}}
+                 <option style="background-image:url({{url}});" value="{{name}}" >{{name}}</option>
+              {{/each}}
 
 					   </select>
       			</li>
 
       		
-      			<li><label for="category">Category</label>
-      				<input type="text" placeholder="Fruit? Dairy?" name="category">
+      			<li><label for="item_category">Category</label>
+      				<input type="text" placeholder="Fruit? Dairy?" name="item_category">
       			</li>
 
       			<li><label for="description">Item Description</label>
@@ -136,7 +136,6 @@
 
       			<li><label class="form-check-label">
       				<input type="checkbox" for="shareable" name="shareable">Is this item shareable?</label>
-
       			</li>
 
       			<li>

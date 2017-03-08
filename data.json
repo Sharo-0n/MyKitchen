@@ -6,17 +6,12 @@
 			"item_category": "fruit",
 			"item_name": "Apple",
 			"item_imageURL": "/image/item_icon/apple.png",
-			"expiration_month": "2",
-			"expiration_day": "28",
-			"expiration_year": "2017",
-			"price_per_unit": "1.99",
-			"unit": "lbs",
-			"amount": "3.2",
-			"total_price": "6.37",
+			"expiration_date": "2017-05-01",
+			"price": "6.37",
 			"shareable": true,
-			"wasted": "0",
 			"used_up": 0,
-			"description": "There's no description just yet"
+			"removed": 0,
+			"description": "Dom bought these apples"
 		},
 
 		{
@@ -25,17 +20,12 @@
 			"item_category": "drink",
 			"item_name": "Diet Coke",
 			"item_imageURL": "/image/item_icon/drinks.png",
-			"expiration_month": "8",
-			"expiration_day": "31",
-			"expiration_year": "2017",
-			"price_per_unit": "0.99",
-			"unit": "count",
-			"amount": "5",
-			"total_price": "4.95",
+			"expiration_date": "2017-05-01",
+			"price": "6.37",
 			"shareable": true,
-			"wasted": "0",
 			"used_up": 0,
-			"description": "There's no description just yet"
+			"removed": 0,
+			"description": "Diet coke makes me less guilty."
 
 
 		},
@@ -46,17 +36,12 @@
 			"item_category": "vegetable",
 			"item_name": "lettuce",
 			"item_imageURL": "/image/item_icon/lettuce.png",
-			"expiration_month": "2",
-			"expiration_day": "28",
-			"expiration_year": "2017",
-			"price_per_unit": "0.99",
-			"unit": "lbs",
-			"amount": "2",
-			"total_price": "1.98",
+			"expiration_date": "2017-04-01",
+			"price": "6.37",
 			"shareable": false,
-			"wasted": "0",
 			"used_up": 0,
-			"description": "There's no description just yet"
+			"removed": 0,
+			"description": "Veggie veggie!"
 		},
 
 		{
@@ -65,17 +50,12 @@
 			"item_category": "fruit",
 			"item_name": "Apple",
 			"item_imageURL": "/image/item_icon/apple.png",
-			"expiration_month": "2",
-			"expiration_day": "26",
-			"expiration_year": "2017",
-			"price_per_unit": "1.69",
-			"unit": "lbs",
-			"amount": "3",
-			"total_price": "5.07",
+			"expiration_date": "2017-04-01",
+			"price": "6.37",
 			"shareable": true,
-			"wasted": "0",
 			"used_up": 0,
-			"description": "There's no description just yet"
+			"removed": 0,
+			"description": "More apples"
 
 		},
 
@@ -85,17 +65,12 @@
 			"item_category": "grain",
 			"item_name": "flour",
 			"item_imageURL": "/image/item_icon/flour.png",
-			"expiration_month": "10",
-			"expiration_day": "31",
-			"expiration_year": "2017",
-			"price_per_unit": "13.99",
-			"unit": "bag",
-			"amount": "1",
-			"total_price": "13.99",
+			"expiration_date": "2017-09-01",
+			"price": "6.37",
 			"shareable": false,
-			"wasted": "0",
 			"used_up": 0,
-			"description": "There's no description just yet"
+			"removed": 0,
+			"description": "For Sarah's birthday cake"
 
 		},
 
@@ -105,17 +80,12 @@
 			"item_category": "dairy",
 			"item_name": "non-fat milk",
 			"item_imageURL": "/image/item_icon/milk.png",
-			"expiration_month": "2",
-			"expiration_day": "14",
-			"expiration_year": "2017",
-			"price_per_unit": "5.99",
-			"unit": "bag",
-			"amount": "1",
-			"total_price": "5.99",
-			"shareable": false,
-			"wasted": "1",
+			"expiration_date": "2017-05-01",
+			"price": "6.37",
+			"shareable": true,
 			"used_up": 0,
-			"description": "There's no description just yet"
+			"removed": 0,
+			"description": "Healthy healthy!"
 
 		},
 
@@ -125,17 +95,12 @@
 			"item_category": "vegetable",
 			"item_name": "onion",
 			"item_imageURL": "/image/item_icon/onion.png",
-			"expiration_month": "3",
-			"expiration_day": "14",
-			"expiration_year": "2017",
-			"price_per_unit": "0.99",
-			"unit": "lbs",
-			"amount": "1",
-			"total_price": "0.99",
+			"expiration_date": "2017-05-01",
+			"price": "6.37",
 			"shareable": true,
-			"wasted": "0",
 			"used_up": 0,
-			"description": "There's no description just yet"
+			"removed": 0,
+			"description": "Onions make me cry."
 
 		},
 
@@ -145,17 +110,12 @@
 			"item_category": "fruit",
 			"item_name": "orange",
 			"item_imageURL": "/image/item_icon/orange.png",
-			"expiration_month": "3",
-			"expiration_day": "14",
-			"expiration_year": "2017",
-			"price_per_unit": "0.99",
-			"unit": "lbs",
-			"amount": "1",
-			"total_price": "0.99",
+			"expiration_date": "2017-03-14",
+			"price": "6.37",
 			"shareable": true,
-			"wasted": "0",
 			"used_up": 0,
-			"description": "There's no description just yet"
+			"removed": 0,
+			"description": "Peel, don't cut."
 
 		}
 	], 

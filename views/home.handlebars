@@ -47,7 +47,7 @@
 
 	<!-- Title: MyPantry -->
 	<div class = "title">
-		<h1>My Pantry</h1>
+		<h1>Apt.#4410's Pantry</h1>
 	</div>
 	<label class="switch">
 		<h2 id="current_view">Public Pantry</h2> 
@@ -129,8 +129,8 @@
 		
 
 		<!-- Title: MyPantry -->
-		<div class = "title">
-			<h1>Smart Kitchen</h1>
+		<div class="title" id='main_title'>
+			<p>Apt.#4410's Pantry</p>
 			
 		</div>
 		<label class="switch">
@@ -143,12 +143,15 @@
 				function swith_view() {
 					var view = document.getElementById("view_swithcer").checked;
 					if(view) {
+						
 						document.getElementById("current_view").innerHTML = "Private Pantry";
+						$('#main_title').text("My Pantry"); 
 						$(".private_shelf").show();
 						$(".public_shelf").hide();
 					}
 					else {
 						document.getElementById("current_view").innerHTML = "Public Pantry";
+						$('#main_title').text("Apt.#4410's Pantry");
 						$(".private_shelf").hide();
 						$(".public_shelf").show();
 					}
@@ -162,11 +165,12 @@
 		<ul class="container">
 	  			<ul class="private_shelf">
 		  			{{#each item}}
-		  				{{#unless used_up}}
+		  				{{#unless removed}}
 
 		  				<li  class = "food" data-toggle="modal" data-target="#myModal">
-		  					<h4 class="food_name">{{item_name}}</h4>
+		  					<h4 class="food_name">My {{item_name}}</h4>
 		  					<img src="{{item_imageURL}}" class="food_icon">
+		  					<p style="display: none" class="owner">{{owner}}</p>
 		  					<p style="display: none" class="item_description">{{description}}</p>
 		  				</li>
 		  					<div class="buttonContainer">
@@ -175,6 +179,15 @@
 							-->
 			  					<form id="removeItemForm" class="delete" role="form" method="get" action="/remove">
 			  						<input class="hide" value="{{item_ID}}" name="item_ID">
+			  						<input class="hide" value="{{owner}}" name="owner">
+			  						<input class="hide" value="{{item_category}}" name="item_category">
+			  						<input class="hide" value="{{item_name}}" name="item_name">
+			  						<input class="hide" value="{{item_imageURL}}" name="item_imageURL">
+			  						<input class="hide" value="{{expiration_date}}" name="expiration_date">
+			  						<input class="hide" value="{{price}}" name="price">
+			  						<input class="hide" value="{{shareable}}" name="shareable">
+			  						<input class="hide" value="{{description}}" name="description">
+			  						<input class="hide" value="{{used_up}}" name="used_up">
 									<input type="submit" id="submitBtn" class="button rmBtn" value="Remove"></input>
 								</form> 
 		  					</div>
@@ -186,13 +199,14 @@
 
 	  			<ul class="public_shelf">
 		  			{{#each item}}
-			  			{{#unless used_up}}
+			  			{{#unless removed}}
 			  				{{#if shareable}}
 
 				  				<li  class = "food" data-toggle="modal" data-target="#myModal">
 
-				  					<h4 class="food_name">{{item_name}}</h4>
+				  					<h4 class="food_name">{{owner}}'s {{item_name}}</h4>
 				  					<img src="{{item_imageURL}}" class="food_icon">
+				  					<p style="display: none" class="owner">{{owner}}</p>
 				  					<p style="display: none" class="item_description">{{description}}</p>
 				  					<!-- hide, because we don't want remove in public
 				  					<div class="buttonContainer">
@@ -244,8 +258,16 @@
 		                <div class="modal-footer">
 		                	<form id="removeItemForm" class="delete" role="form" method="get" action="/remove">
 			  						<input class="hide" value="{{item_ID}}" name="item_ID">
-									<input type="submit" id="submitBtn_in_modal" class="button rmBtn" value="Remove"></input>
-							</form> 
+			  						<input class="hide" value="{{owner}}" name="owner">
+			  						<input class="hide" value="{{item_category}}" name="item_category">
+			  						<input class="hide" value="{{item_name}}" name="item_name">
+			  						<input class="hide" value="{{item_imageURL}}" name="item_imageURL">
+			  						<input class="hide" value="{{expiration_date}}" name="expiration_date">
+			  						<input class="hide" value="{{price}}" name="price">
+			  						<input class="hide" value="{{shareable}}" name="shareable">
+			  						<input class="hide" value="{{description}}" name="description">
+									<input type="submit" id="submitBtn_in_modal" class="button rmBtn" value="This item is used up"></input>
+							</form>
 		                    <!--
 		                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 		                	-->
