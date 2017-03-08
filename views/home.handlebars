@@ -168,17 +168,24 @@
 		  					<h4 class="food_name">{{item_name}}</h4>
 		  					<img src="{{item_imageURL}}" class="food_icon">
 		  					<p style="display: none" class="item_description">{{description}}</p>
-
+		  				</li>
 		  					<div class="buttonContainer">
+<<<<<<< HEAD
 
 		  					<form id="removeItemForm" class="delete" role="form" method="get" action="/remove" style="z-index: 5">
 		  						<input class="hide" value="{{item_ID}}" name="item_ID">
 								<input type="submit" id="submitBtn" class="button rmBtn" value="Remove"></input>
 							</form>  
+=======
+		  					<!-- activate pop up window here
+			  					<button id="myBtn" class="button">More...</button>
+							-->
+			  					<form id="removeItemForm" class="delete" role="form" method="get" action="/remove">
+			  						<input class="hide" value="{{item_ID}}" name="item_ID">
+									<input type="submit" id="submitBtn" class="button rmBtn" value="Remove"></input>
+								</form> 
 		  					</div>
-		  				</li>
-		  				
-		  		
+
 						{{/unless}}	
 		  			{{/each}}
 	  			</ul>
@@ -186,11 +193,11 @@
 
 	  			<ul class="public_shelf">
 		  			{{#each item}}
-		  			{{#unless used_up}}
-		  				{{#if shareable}}
+			  			{{#unless used_up}}
+			  				{{#if shareable}}
 
-	  				
-		  				<li  class = "food" data-toggle="modal" data-target="#myModal">
+				  				<li  class = "food" data-toggle="modal" data-target="#myModal">
+
 
 		  					<h4 class="food_name">{{item_name}}</h4>
 		  					<img src="{{item_imageURL}}" class="food_icon">
@@ -208,6 +215,25 @@
 		  				
 			  			{{/if}}
 			  		{{/unless}}	
+				  					<h4 class="food_name">{{item_name}}</h4>
+				  					<img src="{{item_imageURL}}" class="food_icon">
+				  					<p style="display: none" class="item_description">{{description}}</p>
+				  					<!-- hide, because we don't want remove in public
+				  					<div class="buttonContainer">
+					  					<button id="myBtn" class="button">More...</button>
+										
+										<form id="removeItemForm" class="delete" role="form" method="get" action="/remove">
+					  						<input class="hide" value="{{item_ID}}" name="item_ID">
+											<input type="submit" id="submitBtn" class="button rmBtn" value="Remove"></input>
+										</form>
+				  					
+				  					</div>
+				  					-->
+				  				</li>
+			  				
+				  			{{/if}}
+				  		{{/unless}}	
+
 		  			{{/each}}
 	  			</ul>
 		</ul>
@@ -245,7 +271,13 @@
 		  						<input class="hide" value="#" name="item_ID" id="ModalRmvBtn">
 								<input type="submit" id="submitBtn" class="button rmBtn" value="Remove"></input>
 							</form> 
+			  						<input class="hide" value="{{item_ID}}" name="item_ID">
+									<input type="submit" id="submitBtn_in_modal" class="button rmBtn" value="Remove"></input>
+							</form> 
+		                    <!--
+>>>>>>> 9f094a1ca0fe02825daed96c8c03eeae08be0eed
 		                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		                	-->
                			</div>
            			</div>
 	          	</div>

@@ -337,8 +337,8 @@ body{
     margin: 0 0.6em;
     margin-left: 2em;
     margin-bottom: 10px;
-    width: 6em;
-    font-size: xx-small;
+    width: 8em;
+    font-size: small;
     text-align: center;
     padding: 0 5px;
     background-color: white;
@@ -352,6 +352,27 @@ body{
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+#submitBtn_in_modal.rmBtn {
+    margin: 0 0.6em;
+    margin-left: 2em;
+    margin-bottom: 10px;
+    width: 18em;
+    font-size: medium;
+    text-align: center;
+    padding: 0 5px;
+    background-color: white;
+    color: #DF5E5E;
+    border: 2px solid #DF5E5E;
+    line-height: 3em;
+}
+
+#submitBtn_in_modal.rmBtn:hover {
+    background-color: #DF5E5E;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 
 /*SLIDER CSS CODE IS HERE: For toggling between how the
 grocery items are viewed (expiratin date versus date added ); */
