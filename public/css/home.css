@@ -306,8 +306,8 @@ body{
 
 .buttonContainer {
   max-height: 2em;
+  display: flex;
   flex-direction: row;
-  text-align: center;
 
 }
 

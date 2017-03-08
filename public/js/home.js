@@ -110,12 +110,9 @@ $('#myModal').on('show.bs.modal', function (event) {
         var name = element.find('.food_name').text();
         var description = element.find('.item_description').text(); // Extract the value of the .text div inside that li
         var imgSrc = element.find('.food_icon').attr("src");//extract the img src
-        var value = element.find('.delete').find('.hide').attr("value");
-        console.log(value);
 
         var modal = $(this);
         $("#modal_head").text(''+name);
         $("#popup").html('' + description);
         $("#modal_img").attr("src", imgSrc);
-        $("#ModalRmvBtn").attr("value", value);
     });
