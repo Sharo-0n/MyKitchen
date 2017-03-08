@@ -74,7 +74,7 @@ $.getJSON('/data.json', function(data) {
 /* function to toggle the locations of buttons relative to window size */
 /*function windowSize() {
   var w= 
-}*/
+}*
 
 
 // Get the modal
@@ -89,7 +89,7 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
-}
+} 
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -102,3 +102,17 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+*/
+
+$('#myModal').on('show.bs.modal', function (event) {
+        var element = $(event.relatedTarget); // the li that triggered the modal to show
+        var name = element.find('.food_name').text();
+        var description = element.find('.item_description').text(); // Extract the value of the .text div inside that li
+        var imgSrc = element.find('.food_icon').attr("src");//extract the img src
+
+        var modal = $(this);
+        $("#modal_head").text(''+name);
+        $("#popup").html('' + description);
+        $("#modal_img").attr("src", imgSrc);
+    });

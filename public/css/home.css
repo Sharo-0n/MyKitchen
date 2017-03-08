@@ -468,11 +468,14 @@ p{
   background:#A0522D;
 <<<<<<< HEAD
 }
+*/
 
+body.modal-open div.modal-backdrop { 
+    z-index: 0; 
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
@@ -485,6 +488,7 @@ p{
 
 /* Modal Content/Box */
 .modal-content {
+    text-align: center;
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -514,4 +518,11 @@ p {
 
 .hide {
   display: none;
+}
+
+#modal_img {
+  display: inline-block;
+  align-self: center;
+  max-height: 8em;
+  max-width: 8em;
 }
