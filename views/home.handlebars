@@ -170,10 +170,8 @@
 		  					<p style="display: none" class="item_description">{{description}}</p>
 
 		  					<div class="buttonContainer">
-		  					<!-- activate pop up window here -->
-		  					<button id="myBtn" class="button">More...</button>
 
-		  					<form id="removeItemForm" class="delete" role="form" method="get" action="/remove">
+		  					<form id="removeItemForm" class="delete" role="form" method="get" action="/remove" style="z-index: 5">
 		  						<input class="hide" value="{{item_ID}}" name="item_ID">
 								<input type="submit" id="submitBtn" class="button rmBtn" value="Remove"></input>
 							</form>  
@@ -198,10 +196,8 @@
 		  					<img src="{{item_imageURL}}" class="food_icon">
 		  					<p style="display: none" class="item_description">{{description}}</p>
 		  					<div class="buttonContainer">
-		  					<!-- activate pop up window here -->
-		  					<button id="myBtn" class="button">More...</button>
 							
-							<form id="removeItemForm" class="delete" role="form" method="get" action="/remove">
+							<form id="removeItemForm" class="delete" role="form" method="get" action="/remove" style="z-index: 3">
 		  						<input class="hide" value="{{item_ID}}" name="item_ID">
 								<input type="submit" id="submitBtn" class="button rmBtn" value="Remove"></input>
 							</form>  
@@ -245,6 +241,10 @@
 		                    <p id="popup">Some text in the modal.</p>
 		                </div>
 		                <div class="modal-footer">
+		                	<form id="removeItemForm" class="delete" role="form" method="get" action="/remove">
+		  						<input class="hide" value="#" name="item_ID" id="ModalRmvBtn">
+								<input type="submit" id="submitBtn" class="button rmBtn" value="Remove"></input>
+							</form> 
 		                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                			</div>
            			</div>
