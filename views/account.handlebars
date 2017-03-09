@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<link href="index.css" rel="stylesheet">
+	<link href="./css/index.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Syncopate" />
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../css/bootstrap.css">
@@ -12,7 +12,44 @@
 </head>
 
 <body>
-	{{> facebook}}
+	<script >
+		  //appId      : '1265350636883154',
+		  //the one below is just for local development
+		  //please change to the one above before deploying
+		window.fbAsyncInit = function() {
+		FB.init({
+		  appId      : '1270075553077329',
+		  xfbml      : true,
+		  version    : 'v2.8'
+		});
+		FB.AppEvents.logPageView();
+		FB.getLoginStatus(function(response) {
+		  if (response.status === 'connected') {
+		    console.log("user logged into facebook and app");
+		    FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
+		  } else {
+		    console.log("user is not logged into facebook or app");
+		    alert("You are not logged into Facebook or the App");
+		    window.location.href="/";
+		  }
+		});
+		};
+
+		(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+		function changeUser(response) {
+		  console.log("changeUser() called"+response);
+		  $("#name").text(response.name);
+		  $("#photo").attr('src', response.picture.data.url);
+		}
+	</script>
+	<script src="/js/facebook.js"></script>
 
 	<header>
   		<button class="hamburger">&#9776;</button>
@@ -27,12 +64,22 @@
 		<h1>Account</h1>
 	</div>
 
+
+
+	<div>
+        <h1 id="name">Some Name</h1>
+        <img id="photo" class='img-responsive' src="images/lorempixel.people.1.jpeg" />
+    </div>
+
+
+
+
+
+
 	<table class="bottom_button_table" align="center">
 		<tr>
 			<td>
-				<a href="/" class="edit_item">
-					<button class="button logoutButton">LOGOUT</button>
-				</a>
+				<button class="button logoutButton" onclick="logout()">LOGOUT</button>
 			</td>
 		</tr>
 	</table>
