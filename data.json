@@ -46,7 +46,7 @@
 
 		{
 			"item_ID": 3,
-			"owner": "Dominic",
+			"owner": "Sarah",
 			"item_category": "fruit",
 			"item_name": "Apple",
 			"item_imageURL": "/image/item_icon/apple.png",
@@ -76,7 +76,7 @@
 
 		{
 			"item_ID": 5,
-			"owner": "Dominic",
+			"owner": "Shuyuan",
 			"item_category": "dairy",
 			"item_name": "non-fat milk",
 			"item_imageURL": "/image/item_icon/milk.png",
@@ -122,19 +122,80 @@
 
 	"icon_imageURLs": [
 		{
-			"name": "orange",
-			"url": "/image/item_icon/orange.png"
-		},
-
-		{
-			"name": "apple",
-			"url": "/image/item_icon/apple.png"
-		},
-
-		{
-			"name": "onion",
-			"url": "/image/item_icon/onion.png"
-		}
+  			"name": "apple",
+  			"url": "/image/item_icon/apple.png"
+  		},
+  
+  		{
+ 			"name": "cabbage",
+ 			"url": "/image/item_icon/cabbage.png"
+ 		},
+ 
+ 		{
+ 			"name": "cake",
+ 			"url": "/image/item_icon/cake.png"
+ 		},
+ 		
+ 		{
+ 			"name": "coffee",
+ 			"url": "/image/item_icon/coffee.png"
+ 		},
+ 
+ 		{
+ 			"name": "dairy",
+ 			"url": "/image/item_icon/cow.png"
+ 		},
+ 		
+ 		{
+ 			"name": "soda",
+ 			"url": "/image/item_icon/drinks.png"
+ 		},
+ 		
+ 		{
+ 			"name": "flour",
+ 			"url": "/image/item_icon/flour.png"
+ 		},
+ 		
+ 		{
+ 			"name": "fruits or vegetables",
+ 			"url": "/image/item_icon/fruits_vegetables.png"
+ 		},
+ 		
+ 		{
+ 			"name": "lemon",
+ 			"url": "/image/item_icon/lemon.png"
+ 		},
+ 		
+ 		{
+ 			"name": "lettuce",
+ 			"url": "/image/item_icon/lettuce.png"
+ 		},
+ 		
+ 		{
+ 			"name": "milk",
+ 			"url": "/image/item_icon/milk.png"
+ 		},
+ 		
+ 		{
+ 			"name": "orange",
+ 			"url": "/image/item_icon/orange.png"
+ 		},
+ 
+ 
+ 		{
+  			"name": "onion",
+  			"url": "/image/item_icon/onion.png"
+ 		},
+ 
+ 		{
+ 			"name": "toast",
+ 			"url": "/image/item_icon/toast.png"
+ 		},
+ 
+ 		{
+ 			"name": "tomato",
+ 			"url": "/image/item_icon/tomato.png"
+  		}
 	],
 
 	"list_item": [

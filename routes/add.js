@@ -18,11 +18,14 @@ exports.addItem = function(req, res) { 
 	var shareable = req.query.shareable;
 	var description = req.query.description;
 
+	if(item_imageURL=='') {
+		item_imageURL = "/image/item_icon/fruits_vegetables.png";
+	}
 
 	var newItem = {
 		item_ID: newItem_id,
 		owner: owner,
-		item_category: "fruit",
+		item_category: item_category,
 		item_name: item_name,
 		item_imageURL: item_imageURL,
 		expiration_date: expiration_date,

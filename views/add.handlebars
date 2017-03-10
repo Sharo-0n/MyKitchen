@@ -136,11 +136,11 @@
 
 
       			<li>
-      				<label for="icon">Icon</label>
-      				<select name="icon" id="icon" class="icon-menu">
+      				<label for="item_imageURL">Icon</label>
+      				<select name="item_imageURL" id="icon" class="icon-menu">
       				<option style="padding-left:0px;" value="">Select an Icon</option>
       				{{#each icon_imageURLs}}
-                 <option style="background-image:url({{url}});" value="{{name}}" >{{name}}</option>
+                 <option style="background-image:url({{url}});" value="{{url}}" >{{name}}</option>
               {{/each}}
 
 					   </select>
