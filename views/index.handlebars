@@ -65,18 +65,36 @@ function statusChangeCallback(response) {
 -->
 
 	<div class="container">
-		<h1>Our Kitchen</h1>
+
+		<div class="bold_title">Our Kitchen</div>
 
 		<div class="login-page">
 			
 			<div class="form">
 				<form class="login-form">
 					<p class="facebookLogin">
-						Welcome! Please login through Facebook
-					<fb:login-button id = login scope="public_profile,email" onlogin="checkLoginState();">
+						Welcome to Our Kitchen!
+						<br/>
+						This App will help you manage your pantry especially when you are sharing it with roomates and friends.
+						<br/>
+						<br/>
+						Easily tag your food shareable!
+						<br/>
+						Comment on friends' food!
+						<br/>
+						Get notification on expiration!
+						<br/>
+						<br/>
+						<br/>
+						Let's start sharing!
+						<br/>
+						<br/>
+					<fb:login-button id='login' size="large" scope="public_profile,email" onlogin="checkLoginState();">
+					Login with Facebook
 					</fb:login-button>
+					
 					</p>
-
+					
 				</form>
 			</div>
 		</div>

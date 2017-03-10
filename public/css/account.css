@@ -32,19 +32,7 @@ body{
   margin-top:5px; 
   margin:0 auto;
 }
-.title{
-  padding: 100;
-  margin: 100;
-  color: #111; 
-  font-family: 'Helvetica Neue', 
-  sans-serif; 
-  font-size: 75px; 
-  font-weight: 
-  bold;
-  letter-spacing: -1px; 
-  line-height: 1; 
-  text-align: center;
-}
+
 span{padding-left:20px;}
 a{color:#336699;}
 .flex-container {
@@ -98,22 +86,23 @@ body {
 }
 
 #FB_name {
-  margin-top: 10px;
+  margin-top: 15px;
   margin: auto;
-  width: 50%;
+  width: 70%;
   padding: 10px;
   font-family: Courier;
   font-weight:bold;
-  line-height:3em;
-  font-size: 1.25em;
+  line-height: 1.2em;
+  font-size: 3em;
+  text-align: center;
 }
 
 #FB_photo {
   margin-top: 50px;
   background-repeat: no-repeat;
   background-position: 50%;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  border-radius: 60%;
+  width: 17em;
+  height: 17em;
 
 }

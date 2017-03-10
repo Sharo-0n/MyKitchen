@@ -113,7 +113,7 @@ $('#myModal').on('show.bs.modal', function (event) {
         var imgSrc = element.find('.food_icon').attr("src");//extract the img src
 
         var modal = $(this);
-        $("#modal_head").text(owner+ "'s "+name);
+        $("#modal_head").text(name);
         $("#popup").html(owner+': ' + description);
         $("#modal_img").attr("src", imgSrc);
     });

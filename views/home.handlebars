@@ -231,31 +231,33 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	  			<ul class="private_shelf">
 		  			{{#each item}}
 		  				{{#unless removed}}
-		  				<li  class="food" id="private_food_{{itemID}}" data-toggle="modal" data-target="#myModal">
+		  				<div class="food">
+		  				<li   id="private_food_{{itemID}}" data-toggle="modal" data-target="#myModal">
 		  					<h3 class="food_name">My {{item_name}}</h3>
-		  					<img src="{{item_imageURL}}" class="food_icon">
 		  					<p style="display: none" class="owner">{{owner}}</p>
+		  					<img src="{{item_imageURL}}" class="food_icon">
 		  					<p style="display: none" class="item_description">{{description}}</p>
-		  				
-		  					<div class="buttonContainer">
+		  				</li>
+
+		  				<div class="buttonContainer">
 		  					<!-- activate pop up window here
 			  					<button id="myBtn" class="button">More...</button>
 							-->
-			  					<form id="removeItemForm" class="delete" role="form" method="get" action="/remove">
-			  						<input class="hide" value="{{item_ID}}" name="item_ID">
-			  						<input class="hide" value="{{owner}}" name="owner">
-			  						<input class="hide" value="{{item_category}}" name="item_category">
-			  						<input class="hide" value="{{item_name}}" name="item_name">
-			  						<input class="hide" value="{{item_imageURL}}" name="item_imageURL">
-			  						<input class="hide" value="{{expiration_date}}" name="expiration_date">
-			  						<input class="hide" value="{{price}}" name="price">
-			  						<input class="hide" value="{{shareable}}" name="shareable">
-			  						<input class="hide" value="{{description}}" name="description">
-			  						<input class="hide" value="{{used_up}}" name="used_up">
-									<input type="submit" id="submitBtn" class="button rmBtn" value="Remove"></input>
-								</form> 
-		  					</div>
-		  				</li>
+		  					<form id="removeItemForm" class="delete" role="form" method="get" action="/remove">
+		  						<input class="hide" value="{{item_ID}}" name="item_ID">
+		  						<input class="hide" value="{{owner}}" name="owner">
+		  						<input class="hide" value="{{item_category}}" name="item_category">
+		  						<input class="hide" value="{{item_name}}" name="item_name">
+		  						<input class="hide" value="{{item_imageURL}}" name="item_imageURL">
+		  						<input class="hide" value="{{expiration_date}}" name="expiration_date">
+		  						<input class="hide" value="{{price}}" name="price">
+		  						<input class="hide" value="{{shareable}}" name="shareable">
+		  						<input class="hide" value="{{description}}" name="description">
+		  						<input class="hide" value="{{used_up}}" name="used_up">
+								<input type="submit" id="submitBtn" class="button rmBtn" value="Remove"></input>
+							</form> 
+	  					</div>
+	  					</div>
 
 						{{/unless}}	
 		  			{{/each}}
