@@ -43,3 +43,4 @@ function logoutCallback(response) {
   console.log(response);
   window.location.href="/";
 }
+console.log(response);

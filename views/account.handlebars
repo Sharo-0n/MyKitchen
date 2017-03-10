@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="/css/home.css">
 	<link rel="stylesheet" href="/css/general.css">
 	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/account.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -28,7 +29,7 @@
 		FB.getLoginStatus(function(response) {
 		  if (response.status === 'connected') {
 		    console.log("user logged into facebook and app");
-		    FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
+		    FB.api('/me?fields=name,first_name,picture.width(400)', changeUser);
 		  } else {
 		    console.log("user is not logged into facebook or app");
 		    alert("You are not logged into Facebook or the App");

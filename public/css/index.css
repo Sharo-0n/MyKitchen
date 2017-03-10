@@ -24,6 +24,21 @@
   box-sizing: border-box;
   font-size: 14px;
 }
+.form p{
+  font-family: Syncopate;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+
+}
 .form b {
   font-family: Syncopate;
   text-transform: uppercase;
@@ -87,16 +102,14 @@
   color: #EF3B3A;
 }
 h1 {
-  font-family: Syncopate;
-  font-size: 50px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 100;
-  line-height: 73.5px;
-  text-align: center;
-  letter-spacing: 3px;
-  color: #FFFFFF;
+color: #CEF0D4; font-family: 'Rouge Script', cursive; font-size: 130px; font-weight: normal; line-height: 48px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #082b34;
 }
+.login {
+  width:98px;
+  height:42px;
+  border:2px solid #ccc;
+}
+
 img {
   margin: auto;
 }
