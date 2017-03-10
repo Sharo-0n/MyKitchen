@@ -2,6 +2,8 @@
       //appId      : '1265350636883154',
       //the one below is just for local development
       //please change to the one above before deploying
+  var FB_name = '';
+  var FB_photo = '';
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '1270075553077329',
@@ -12,6 +14,8 @@
     FB.getLoginStatus(function(response) {
       if (response.status === 'connected') {
         console.log("user logged into facebook and app");
+        console.log(response);
+        FB.api('/me?fields=name,first_name,picture.width(480)', initUser);
       } else {
         console.log("user is not logged into facebook or app");
         alert("You are not logged into Facebook or the App");
@@ -20,14 +24,25 @@
     });
   };
 
-  (function(d, s, id){
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
+    (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 
+
+    function initUser(response) {
+      console.log(response);
+      console.log("initUser() called");
+      FB_name = response.name;
+      FB_photo = response.picture.data.url;
+      renderUser();
+    }
+    function renderUser() {
+      console.log("renderUser() called");
+      $("#FB_name").text(FB_name);
+      $("#FB_photo").attr('src', FB_photo);
+    }
 </script>
-
-<script src="/js/facebook.js"></script>

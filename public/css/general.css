@@ -11,6 +11,7 @@ header{
 }
 
 .title{
+  margin: auto;
   margin-top: 60px;
   padding: 15px;
   padding-bottom: 0;
@@ -24,5 +25,5 @@ header{
   font-family:Syncopate;
   line-height:1em;
   max-height: 3em;
-  max-width: 100%;
+  max-width: 90%;
 }

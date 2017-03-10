@@ -28,7 +28,50 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 </head>
 
 <body>
-	{{> facebook}}
+	<script>
+	      //appId      : '1265350636883154',
+	      //the one below is just for local development
+	      //please change to the one above before deploying
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '1270075553077329',
+	      xfbml      : true,
+	      version    : 'v2.8'
+	    });
+	    FB.AppEvents.logPageView();
+	    FB.getLoginStatus(function(response) {
+	      if (response.status === 'connected') {
+	        console.log("user logged into facebook and app");
+	        console.log(response);
+	        //FB.api('/me?fields=name,first_name,picture.width(480)', filter);
+	      } else {
+	        console.log("user is not logged into facebook or app");
+	        alert("You are not logged into Facebook or the App");
+	        window.location.href="/";
+	      }
+	    });
+	  };
+
+	    (function(d, s, id){
+	      var js, fjs = d.getElementsByTagName(s)[0];
+	      if (d.getElementById(id)) {return;}
+	      js = d.createElement(s); js.id = id;
+	      js.src = "//connect.facebook.net/en_US/sdk.js";
+	      fjs.parentNode.insertBefore(js, fjs);
+	    }(document, 'script', 'facebook-jssdk'));
+
+/*
+	    function filter(response) {
+	      var FB_name = response.name;
+	      console.log(FB_name);
+	      var arrayLength = item.length;
+	      for(var i=0; i<arrayLength; i++) {
+	      	$('#private_food_'+i).hide();
+	      }
+	    }
+*/
+	</script>
+
 
     {{#if nav}}
       <!-- the redesign -->
@@ -64,30 +107,36 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		</div>
 
 	<!-- Title: MyPantry -->
-	<div class = "title">Apt.#4410's Pantry</div>
-	<label class="switch">
-		<h2 id="current_view">Public Pantry</h2> 
-		<!-- default checkbox hided, slider round defined in css -->
-		<input  id="view_swithcer" type="checkbox" onclick="swith_view()">
-		<div class="slider round"></div>
+		<div class="title">
+			<div id='main_title'>Apt.#4410's</div>
+			Pantry
+		</div>
+		<label class="switch">
+			<h2 id="current_view">Public Pantry</h2> 
+			<!-- default checkbox hided, slider round defined in css -->
+			<input  id="view_swithcer" type="checkbox" onclick="swith_view()">
+			<div class="slider round"></div>
 
-		<script>
-			function swith_view() {
-				var view = document.getElementById("view_swithcer").checked;
-				if(view) {
-					document.getElementById("current_view").innerHTML = "Private Pantry";
-					$(".private_shelf").show();
-					$(".public_shelf").hide();
+			<script>
+				function swith_view() {
+					var view = document.getElementById("view_swithcer").checked;
+					if(view) { //now public, switch to private
+						
+						document.getElementById("current_view").innerHTML = "Private Pantry";
+						$('#main_title').text("My"); 
+						$(".private_shelf").show();
+						$(".public_shelf").hide();
+					}
+					else { //now private, switch to public
+						document.getElementById("current_view").innerHTML = "Public Pantry";
+						$('#main_title').text("Apt.#4410's");
+						$(".private_shelf").hide();
+						$(".public_shelf").show();
+					}
 				}
-				else {
-					document.getElementById("current_view").innerHTML = "Public Pantry";
-					$(".private_shelf").hide();
-					$(".public_shelf").show();
-				}
-			}
-		</script>
+			</script>
 
-	</label>
+		</label>
 
 	<!--Wood: http://www.technocrazed.com/wp-content/uploads/2015/12/Wood-Wallpaper-Background-22.jpg-->
 
@@ -145,7 +194,10 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		
 
 		<!-- Title: MyPantry -->
-		<div class="title" id='main_title'>Apt.#4410's Pantry</div>
+		<div class="title">
+			<div id='main_title'>Apt.#4410's</div>
+			Pantry
+		</div>
 		<label class="switch">
 			<h2 id="current_view">Public Pantry</h2> 
 			<!-- default checkbox hided, slider round defined in css -->
@@ -158,13 +210,13 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 					if(view) {
 						
 						document.getElementById("current_view").innerHTML = "Private Pantry";
-						$('#main_title').text("My Pantry"); 
+						$('#main_title').text("My"); 
 						$(".private_shelf").show();
 						$(".public_shelf").hide();
 					}
 					else {
 						document.getElementById("current_view").innerHTML = "Public Pantry";
-						$('#main_title').text("Apt.#4410's Pantry");
+						$('#main_title').text("Apt.#4410's");
 						$(".private_shelf").hide();
 						$(".public_shelf").show();
 					}
@@ -179,8 +231,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	  			<ul class="private_shelf">
 		  			{{#each item}}
 		  				{{#unless removed}}
-
-		  				<li  class = "food" data-toggle="modal" data-target="#myModal">
+		  				<li  class="food" id="private_food_{{itemID}}" data-toggle="modal" data-target="#myModal">
 		  					<h3 class="food_name">My {{item_name}}</h3>
 		  					<img src="{{item_imageURL}}" class="food_icon">
 		  					<p style="display: none" class="owner">{{owner}}</p>
