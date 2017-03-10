@@ -3,14 +3,14 @@
 <html>
 <head>
 
-	<link href="../css/add.css" rel="stylesheet">
-
 
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Syncopate" />
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet" href="../css/bootstrap-theme.css">
-	<link href="/css/add.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="/css/general.css">
+	<link rel="stylesheet" href="/css/add.css">
+  <link rel="stylesheet" href="/css/home.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -25,33 +25,10 @@
   		<button class="hamburger">&#9776;</button>
   		<!--<button class="cross">&#735;</button>-->
 </header>
-
-	<div class="menu">
-  		<ul>
-  			<a href="/home"><li> My Pantry </li></a>
-    		<a href="/grocerylist"><li>Grocery List</li></a>
-    		<a href="/add"><li> Add Item </li></a>
-    		<a href="/account"><li>Account Settings</li></a>
-  		</ul>
-  		
-  		<!--LogOut Button-->
-  		<br /><br /><br />
-	  	<table class="bottom_button_table" align="center">
-			<tr>
-				<td>
-					<a href="/">
-						<button class="button logoutButton">LOGOUT</button>
-					</a>
-				</td>
-			</tr>
-		</table>
-
-
-	</div>
+{{> menu}}
 
 	<!-- Title: MyPantry -->
-	<div class = "title">
-	<h1>Add Item</h1>
+	<div class = "title">Add Item</div>
 	<ul class="contains">
 		<form id="addItemForm" role="form" method="get" action="/addItem">
 			<ul class="flex-outer">
@@ -91,8 +68,8 @@
 	{{> menu}}
 
 	<!-- Title: MyPantry -->
-	<div class = "title">
-	<h1>Add Item</h1>
+	<div class = "title">Add Item</div>
+
 	<ul class="contains">
 		<form id="addItemForm" role="form" method="get" action="/addItem">
 			<ul class="flex-outer">
@@ -105,7 +82,7 @@
       			<li>
      				<label for="date" class="col-2 col-form-label">Expiration Date</label>
   					<div class="col-10">
-    				<input class="form-control" type="date" value="2017-03-03" id="example-date-input" name="expiration_date">
+    				<input class="form-control" type="date" value="2017-03-10" id="example-date-input" name="expiration_date">
       			</li>
 
       			<li>
@@ -130,12 +107,12 @@
       				<input type="text" placeholder="Fruit? Dairy?" name="item_category">
       			</li>
 
-      			<li><label for="description">Item Description</label>
-      				<input type="text" placeholder="How do you plan to eat/cook? Any plans with this agent?" name="description">
+      			<li><label for="description">Description</label>
+      				<input type="text" placeholder="Any plan about how to eat/cook?" name="description">
       			</li>
 
-      			<li><label class="form-check-label">
-      				<input type="checkbox" for="shareable" name="shareable">Is this item shareable?</label>
+      			<li><div class="check-label">
+      				<input type="checkbox" for="shareable" name="shareable">Is this item shareable?</div>
       			</li>
 
       			<li>

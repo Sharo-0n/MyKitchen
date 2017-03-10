@@ -1,3 +1,4 @@
+
 h1{
   text-shadow:0px 0px 2px rgba(0,0,0,0.2);
   font-weight:normal;
@@ -48,10 +49,15 @@ header{
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
+
+#icon.icon-menu {
+  height: 3em;
+}
+
 .contains {
   width: 80%;
-  margin: 0 auto;
-  margin-bottom: auto;
+  margin: 1em auto;
+  margin-bottom: 2em;
   background-image: url("http://wallpapercave.com/wp/ARBuPnm.jpg");
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -73,24 +79,36 @@ header{
 }
 
 .flex-outer > li:not(:last-child) {
+  margin-right: 3em;
   margin-bottom: 20px;
+}
+
+.check-label {
+  margin: auto;
+  max-width = 80%;
+  padding: 0.7em;
+  font-weight: bold;
+  font-size: 1.3em;
+  letter-spacing: .1em;
 }
 
 .flex-outer li label,
 .flex-outer li p {
-  padding: 8px;
-  font-weight: 300;
-  letter-spacing: .09em;
-  text-transform: uppercase;
+  padding: 0.5em;
+  font-weight: normal;
+  font-size: 1.5em;
+  letter-spacing: .1em;
 }
 
 .flex-outer > li > label,
 .flex-outer li p {
+  font-family: Verdana;
   flex: 1 0 120px;
-  max-width: 220px;
+  max-width: 100%;
 }
 
 .flex-outer > li > label + *{
+
   flex: 1 0 220px;
   padding-right: 50px;
   border-radius: 5px;
@@ -104,7 +122,7 @@ header{
 .flex-outer li input:not([type='checkbox']),
 .flex-outer li textarea {
   padding: 15px;
-  border: none;
+  border: 3em;
 }
 
 .flex-outer li button {
@@ -116,66 +134,6 @@ header{
   text-transform: uppercase;
   letter-spacing: .09em;
   border-radius: 5px;
-}
-.hamburger{
-  background:none;
-  position:absolute;
-  top:5px;
-  left:0;
-  line-height:45px;
-  padding:5px 15px 0px 10px;
-  color:#FF7F50;
-  border:0;
-  font-size:3em;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-}
-
-.menu{
-  z-index:1000000; 
-  font-weight:bold; 
-  font-size:0.8em; 
-  width:200px; 
-  background:#f1f1f1;  
-  position:absolute; 
-  text-align:center; 
-  font-size:12px;
-}
-.menu ul {
-  margin: 0; 
-  padding: 0; 
-  list-style-type: none; 
-  list-style-image: none;
-}
-.menu li {
-  display: block;   
-  padding:15px 0 15px 0; 
-  border-bottom:#FF7F50 1px solid;
-}
-.menu li:hover{
-  display: block;    
-  background:#ffffff; 
-  padding:15px 0 15px 0; 
-  border-bottom:#FF7F50 1px solid;
-}
-.menu ul li a { 
-  text-decoration:none;  
-  margin: 0px; 
-  color:#666;
-}
-.menu ul li a:hover {  
-  color: #666; 
-  text-decoration:none;
-}
-.menu a{
-  text-decoration:none; 
-  color:#666;
-}
-.menu a:hover{
-  text-decoration:none; 
-  color:#666;
 }
 
 body{
